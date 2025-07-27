@@ -1,102 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vadim Oz — Художник</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vadim Oz Art</title>
   <style>
     body {
-      margin: 0;
       font-family: sans-serif;
-      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
       color: #222;
     }
     header {
-      background: #000;
+      background: #111;
       color: white;
-      padding: 1em;
+      padding: 2rem;
       text-align: center;
     }
-    main {
-      max-width: 900px;
-      margin: 2em auto;
-      padding: 0 1em;
+    h1 {
+      margin: 0;
+      font-size: 2rem;
     }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1rem;
     }
     .gallery img {
+      max-width: 300px;
       width: 100%;
       height: auto;
       border: 1px solid #ccc;
     }
-    .artwork {
-      background: white;
-      padding: 0.5em;
-      border-radius: 8px;
-    }
-    .artwork h3 {
-      margin: 0.2em 0 0.1em;
-    }
     footer {
-      margin-top: 3em;
       text-align: center;
-      color: #666;
-      font-size: 0.9em;
+      padding: 1rem;
+      font-size: 1rem;
+      background: #eee;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Vadim Oz</h1>
-    <p>портфолио художника</p>
+    <h1>Vadim Oz Art</h1>
+    <p>Художник. Исследую границы восприятия, памяти и образа</p>
   </header>
-  <main>
-    <section>
-      <h2>Обо мне</h2>
-      <p>Пишу маслом и углём на холсте и фанере. В картинах исследую внутренние состояния, переломы, моменты необратимого. Раньше снимал и публиковался как тревел-фотограф. Сейчас работаю с телесной памятью, образом, границами и молчанием.</p>
-    </section>
-
-    <section>
-      <h2>Галерея</h2>
-      <div class="gallery">
-        <div class="artwork">
-          <img src="images/1.jpg" alt="Мосты горят, и я сгораю вместе с ними" />
-          <h3>Мосты горят, и я сгораю вместе с ними</h3>
-          <p>100×70, масло на холсте</p>
-        </div>
-        <div class="artwork">
-          <img src="images/2.jpg" alt="Опустошение" />
-          <h3>Опустошение</h3>
-          <p>105×75, масло на фанере</p>
-        </div>
-        <div class="artwork">
-          <img src="images/3.jpg" alt="Вина!" />
-          <h3>Вина!</h3>
-          <p>90×80, масло на холсте</p>
-        </div>
-        <div class="artwork">
-          <img src="images/4.jpg" alt="Слишком поздно" />
-          <h3>Слишком поздно</h3>
-          <p>100×70, масло на холсте</p>
-        </div>
-        <div class="artwork">
-          <img src="images/5.jpg" alt="Любопытство" />
-          <h3>Любопытство</h3>
-          <p>25×20, масло на фанере</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Контакты</h2>
-      <p><strong>Telegram:</strong> <a href="https://t.me/place_for_art">@place_for_art</a></p>
-    </section>
-  </main>
+  <div class="gallery">
+    <img src="https://raw.githubusercontent.com/VadimOZz/vadim-oz-art.github.io/main/previews/1.jpg" alt="Картина 1">
+    <img src="https://raw.githubusercontent.com/VadimOZz/vadim-oz-art.github.io/main/previews/2.jpg" alt="Картина 2">
+    <img src="https://raw.githubusercontent.com/VadimOZz/vadim-oz-art.github.io/main/previews/3.jpg" alt="Картина 3">
+    <img src="https://raw.githubusercontent.com/VadimOZz/vadim-oz-art.github.io/main/previews/4.jpg" alt="Картина 4">
+  </div>
   <footer>
-    &copy; 2025 Vadim Oz
+    Telegram: <a href="https://t.me/place_for_art" target="_blank">@place_for_art</a>
   </footer>
 </body>
 </html>
