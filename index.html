@@ -45,6 +45,7 @@
     .gallery-item {
       margin: 12px;
       max-width: 90vw;
+      transition: box-shadow 0.3s ease;
     }
 
     .gallery-item img {
@@ -58,11 +59,20 @@
       border-radius: 4px;
     }
 
+    .gallery-item img:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
     .caption {
       margin-top: 8px;
       text-align: center;
       font-size: 14px;
       color: #444;
+    }
+
+    .caption strong {
+      display: block;
+      font-weight: bold;
     }
 
     .about {
