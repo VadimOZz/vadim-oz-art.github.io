@@ -6,7 +6,7 @@
   <title>Художник Вадим Золотарёв — Портфолио</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
@@ -14,14 +14,14 @@
     }
 
     .site-header {
-      background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-      padding: 30px 20px 15px;
       text-align: center;
+      padding: 60px 20px 20px;
+      background: white;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     .main-title {
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 600;
       margin: 0;
       letter-spacing: 0.3px;
@@ -29,21 +29,20 @@
 
     .subtitle {
       font-size: 20px;
-      margin-top: 10px;
-      color: #777;
+      margin: 8px 0 0;
+      color: #666;
       font-weight: normal;
-      line-height: 1.4;
     }
 
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 10px;
+      padding: 20px;
     }
 
     .gallery-item {
-      margin: 10px;
+      margin: 12px;
       max-width: 90vw;
     }
 
@@ -55,6 +54,7 @@
       display: block;
       margin: 0 auto;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 4px;
     }
 
     .caption {
@@ -74,14 +74,23 @@
 
     .contacts {
       text-align: center;
-      margin: 40px 0 60px;
+      margin: 50px 0 60px;
       font-size: 14px;
       color: #333;
     }
 
+    .contacts a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       .main-title {
-        font-size: 28px;
+        font-size: 26px;
       }
 
       .subtitle {
@@ -101,7 +110,7 @@
 <body>
   <header class="site-header">
     <h1 class="main-title">Художник Вадим Золотарёв</h1>
-    <div class="subtitle">Портфолио</div>
+    <h2 class="subtitle">Портфолио</h2>
   </header>
 
   <div class="gallery">
