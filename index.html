@@ -6,53 +6,52 @@
   <title>Художник Вадим Золотарёв — Портфолио</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
-      color: #111;
+      font-family: sans-serif;
       padding: 20px;
+      margin: 0;
+      background: #fdfdfd;
     }
 
     h1 {
       text-align: center;
-      font-size: 2.5em;
+      font-size: 2rem;
       margin-bottom: 30px;
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
 
     .gallery-item {
-      text-align: center;
-      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .gallery-item img {
-      max-width: 90vw;
-      max-height: 90vh;
-      height: auto;
-      width: auto;
+      max-width: 100%;
+      max-height: 80vh;
       object-fit: contain;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: white;
     }
 
     .caption {
       margin-top: 10px;
-      font-size: 1em;
+      font-size: 0.95rem;
+      text-align: center;
       line-height: 1.4;
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
+      body {
+        padding: 10px;
       }
-      .caption {
-        font-size: 0.95em;
-        padding: 0 10px;
+      h1 {
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -61,104 +60,103 @@
   <h1>Портфолио</h1>
   <div class="gallery">
 
-    <!-- Каждая из этих блоков — отдельная картина -->
     <div class="gallery-item">
-      <img src="fireee(100x70).jpg" alt="fireee">
+      <img src="fireee(100x70).jpg" alt="«Мосты горят, и я сгораю вместе с ними» — масло, холст 100×70 см">
       <p class="caption">«Мосты горят, и я сгораю вместе с ними»<br>Масло, холст 100×70 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="sp(100x70).jpg" alt="sp">
+      <img src="sp(100x70).jpg" alt="«Обнимая пепел» — масло, холст 100×70 см">
       <p class="caption">«Обнимая пепел»<br>Масло, холст 100×70 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="empty(105x75).jpg" alt="empty">
+      <img src="empty(105x75).jpg" alt="«Опустошение» — масло, холст 105×75 см">
       <p class="caption">«Опустошение»<br>Масло, холст 105×75 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="wine(90x80).jpg" alt="wine">
+      <img src="wine(90x80).jpg" alt="«Вино и вина» — масло, холст 90×80 см">
       <p class="caption">«Вино и вина»<br>Масло, холст 90×80 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="cure(25x20).jpg" alt="cure">
+      <img src="cure(25x20).jpg" alt="«Любопытство» — масло, холст 25×20 см">
       <p class="caption">«Любопытство»<br>Масло, холст 25×20 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="vrn(50x40).jpg" alt="vrn">
+      <img src="vrn(50x40).jpg" alt="«Сумерки над водой» — масло, холст 50×40 см">
       <p class="caption">«Сумерки над водой»<br>Масло, холст 50×40 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="tree(24x18).jpg" alt="tree">
+      <img src="tree(24x18).jpg" alt="«Старый дворик в Сеуле» — масло, холст 24×18 см">
       <p class="caption">«Старый дворик в Сеуле»<br>Масло, холст 24×18 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="amour(60x50).jpg" alt="amour">
+      <img src="amour(60x50).jpg" alt="«Утешение» — масло, холст 60×50 см">
       <p class="caption">«Утешение»<br>Масло, холст 60×50 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="dream(40x35).jpg" alt="dream">
+      <img src="dream(40x35).jpg" alt="«Первый сон» — масло, холст 40×35 см">
       <p class="caption">«Первый сон»<br>Масло, холст 40×35 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="kolokol(50x40).jpg" alt="kolokol">
+      <img src="kolokol(50x40).jpg" alt="«Воспоминание о колокольчиках, которых не было» — масло, холст 50×40 см">
       <p class="caption">«Воспоминание о колокольчиках, которых не было»<br>Масло, холст 50×40 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="Galatea(35x25).jpg" alt="Galatea">
+      <img src="Galatea(35x25).jpg" alt="«Галатея» — масло, холст 35×25 см">
       <p class="caption">«Галатея»<br>Масло, холст 35×25 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="Head.jpg" alt="Head">
+      <img src="Head.jpg" alt="«Боль» — масло, холст 40×30 см">
       <p class="caption">«Боль»<br>Масло, холст 40×30 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="EYE.jpg" alt="EYE">
+      <img src="EYE.jpg" alt="«Взгляд» — масло, холст 30×30 см">
       <p class="caption">«Взгляд»<br>Масло, холст 30×30 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="RIO.jpg" alt="RIO">
+      <img src="RIO.jpg" alt="«Рио. Тот самый день» — масло, холст 30×24 см">
       <p class="caption">«Рио. Тот самый день»<br>Масло, холст 30×24 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="Ikar.jpg" alt="Ikar">
+      <img src="Ikar.jpg" alt="«Дотянуться до солнца» — масло, холст 100×50 см">
       <p class="caption">«Дотянуться до солнца»<br>Масло, холст 100×50 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="Seoul(80x40).jpg" alt="Seoul">
+      <img src="Seoul(80x40).jpg" alt="«Осенний Сеул» — масло, холст 80×40 см">
       <p class="caption">«Осенний Сеул»<br>Масло, холст 80×40 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="fall(105x75).jpg" alt="fall">
+      <img src="fall(105x75).jpg" alt="«Осенью» — масло, холст 105×75 см">
       <p class="caption">«Осенью»<br>Масло, холст 105×75 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="konf(24x18).jpg" alt="konf">
+      <img src="konf(24x18).jpg" alt="«Конфетти» — масло, картон 24×18 см">
       <p class="caption">«Конфетти»<br>Масло, картон 24×18 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="croc(90x60).jpg" alt="croc">
+      <img src="croc(90x60).jpg" alt="«Без-дна» — масло, холст 90×60 см">
       <p class="caption">«Без-дна»<br>Масло, холст 90×60 см</p>
     </div>
 
     <div class="gallery-item">
-      <img src="zakat(100x70).jpg" alt="zakat">
+      <img src="zakat(100x70).jpg" alt="«Интересно, что будет завтра?» — масло, холст 100×70 см">
       <p class="caption">«Интересно, что будет завтра?»<br>Масло, холст 100×70 см</p>
     </div>
 
