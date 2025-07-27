@@ -130,6 +130,41 @@
     font-size: 0.9rem;
   }
 }
+    html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #f9f6f2;
+  border-top: 1px solid #e0dad2;
+  border-bottom: 1px solid #e0dad2;
+  padding: 0.5rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5d4734;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #b29572;
+}
   </style>
 </head>
 <body>
@@ -138,7 +173,16 @@
       <h1>Художник Вадим Золотарёв</h1>
       <h2>Портфолио</h2>
     </header>
-
+    <nav>
+  <ul>
+    <li><a href="#about">О художнике</a></li>
+    <li><a href="#exhibitions">Выставки</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+</nav>
+<section id="gallery">
+  <h2>Галерея</h2>
   <div class="gallery">
     <div class="gallery-item">
   <img src="fireee(100x70).jpg" alt="Мосты горят, и я сгораю вместе с ними. Масло, холст, 100×70 см">
@@ -221,14 +265,14 @@
   <p class="caption">«Интересно, что будет завтра?»<br>Масло, холст 100×70 см</p>
 </div>
   </div>
-
-  <section>
+</section>
+  <section id="about">
       <h3>О художнике</h3>
       <p>Вадим Золотарёв — художник, фотограф, психоаналитик и путешественник, побывавший более чем в пятидесяти странах. Его творческий путь начался с фотографии: дважды его работы были отобраны National Geographic для уличных выставок на Никольской улице в Москве. Переход к живописи стал продолжением этого пути — способом исследовать и передать переплетение внутреннего опыта с образами мира, с пережитым и запечатлённым через тело и взгляд.</p>
       <p>В своих работах Вадим ищет точку соприкосновения между внешним и внутренним, уязвимостью и сопротивлением, болью и её преодолением, увиденным и незамеченным. Его живопись — напряжённый разговор с собой и с миром, попытка выразить невыразимое средствами цвета, фактуры, формы и тишины. Стиль художника балансирует между сном и реальностью, с постоянным стремлением к подлинности переживания.</p>
     </section>
 
-    <section>
+    <section id="exhibitions">
       <h3>Участие в выставках</h3>
       <ul>
         <li>2025 — «Лето в городе В», Дом Архитектора, Воронеж (групповая выставка)</li>
@@ -239,7 +283,7 @@
       </ul>
     </section>
 
-    <section class="contact">
+    <section id="contact">
       <h3>Контакты</h3>
       <p>Email: <a href="mailto:place-to-talk@yandex.ru">place-to-talk@yandex.ru</a></p>
       <p>Telegram: <a href="https://t.me/place_for_art" target="_blank">Место для масла</a></p>
