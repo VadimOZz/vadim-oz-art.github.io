@@ -6,7 +6,7 @@
   <title>Художник Вадим Золотарёв — Портфолио</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
@@ -15,34 +15,22 @@
 
     .site-header {
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 60px 20px 20px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     .main-title {
       font-size: 32px;
-      margin: 0;
       font-weight: 600;
-      letter-spacing: 0.5px;
+      margin: 0;
+      letter-spacing: 0.3px;
     }
 
     .subtitle {
       font-size: 20px;
-      margin: 10px 0 0;
+      margin: 8px 0 0;
       color: #666;
-      font-weight: normal;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 0;
-      padding-top: 25px;
-      font-size: 28px;
-    }
-
-    h2 {
-      text-align: center;
-      margin: 10px 0 30px;
-      font-size: 22px;
       font-weight: normal;
     }
 
@@ -50,11 +38,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 10px;
+      padding: 20px;
     }
 
     .gallery-item {
-      margin: 10px;
+      margin: 12px;
       max-width: 90vw;
     }
 
@@ -66,6 +54,7 @@
       display: block;
       margin: 0 auto;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 4px;
     }
 
     .caption {
@@ -85,12 +74,29 @@
 
     .contacts {
       text-align: center;
-      margin: 40px 0 60px;
+      margin: 50px 0 60px;
       font-size: 14px;
       color: #333;
     }
 
+    .contacts a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
+      .main-title {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
       .caption {
         font-size: 13px;
       }
@@ -109,83 +115,83 @@
 
   <div class="gallery">
     <div class="gallery-item">
-      <img src="fireee(100x70).jpg" alt="«Мосты горят, и я сгораю вместе с ними"">
+      <img src="fireee(100x70).jpg" alt="«Мосты горят, и я сгораю вместе с ними»">
       <p class="caption">«Мосты горят, и я сгораю вместе с ними»<br>Масло, холст 100×70 см</p>
     </div>
     <div class="gallery-item">
-      <img src="sp(100x70).jpg" alt="«Обнимая пепел"">
+      <img src="sp(100x70).jpg" alt="«Обнимая пепел»">
       <p class="caption">«Обнимая пепел»<br>Масло, холст 100×70 см</p>
     </div>
     <div class="gallery-item">
-      <img src="empty(105x75).jpg" alt="«Опустошение"">
+      <img src="empty(105x75).jpg" alt="«Опустошение»">
       <p class="caption">«Опустошение»<br>Масло, холст 105×75 см</p>
     </div>
     <div class="gallery-item">
-      <img src="wine(90x80).jpg" alt="«Вино и вина"">
+      <img src="wine(90x80).jpg" alt="«Вино и вина»">
       <p class="caption">«Вино и вина»<br>Масло, холст 90×80 см</p>
     </div>
     <div class="gallery-item">
-      <img src="cure(25x20).jpg" alt="«Любопытство"">
+      <img src="cure(25x20).jpg" alt="«Любопытство»">
       <p class="caption">«Любопытство»<br>Масло, холст 25×20 см</p>
     </div>
     <div class="gallery-item">
-      <img src="vrn(50x40).jpg" alt="«Сумерки над водой"">
+      <img src="vrn(50x40).jpg" alt="«Сумерки над водой»">
       <p class="caption">«Сумерки над водой»<br>Масло, холст 50×40 см</p>
     </div>
     <div class="gallery-item">
-      <img src="tree(24x18).jpg" alt="«Старый дворик в Сеуле"">
+      <img src="tree(24x18).jpg" alt="«Старый дворик в Сеуле»">
       <p class="caption">«Старый дворик в Сеуле»<br>Масло, холст 24×18 см</p>
     </div>
     <div class="gallery-item">
-      <img src="amour(60x50).jpg" alt="«Утешение"">
+      <img src="amour(60x50).jpg" alt="«Утешение»">
       <p class="caption">«Утешение»<br>Масло, холст 60×50 см</p>
     </div>
     <div class="gallery-item">
-      <img src="dream(40x35).jpg" alt="«Первый сон"">
+      <img src="dream(40x35).jpg" alt="«Первый сон»">
       <p class="caption">«Первый сон»<br>Масло, холст 40×35 см</p>
     </div>
     <div class="gallery-item">
-      <img src="kolokol(50x40).jpg" alt="«Воспоминание о колокольчиках, которых не было"">
+      <img src="kolokol(50x40).jpg" alt="«Воспоминание о колокольчиках, которых не было»">
       <p class="caption">«Воспоминание о колокольчиках, которых не было»<br>Масло, холст 50×40 см</p>
     </div>
     <div class="gallery-item">
-      <img src="Galatea(35x25).jpg" alt="«Галатея"">
+      <img src="Galatea(35x25).jpg" alt="«Галатея»">
       <p class="caption">«Галатея»<br>Масло, холст 35×25 см</p>
     </div>
     <div class="gallery-item">
-      <img src="Head.jpg" alt="«Боль"">
+      <img src="Head.jpg" alt="«Боль»">
       <p class="caption">«Боль»<br>Масло, холст 40×30 см</p>
     </div>
     <div class="gallery-item">
-      <img src="EYE.jpg" alt="«Взгляд"">
+      <img src="EYE.jpg" alt="«Взгляд»">
       <p class="caption">«Взгляд»<br>Масло, холст 30×30 см</p>
     </div>
     <div class="gallery-item">
-      <img src="RIO.jpg" alt="«Рио. Тот самый день"">
+      <img src="RIO.jpg" alt="«Рио. Тот самый день»">
       <p class="caption">«Рио. Тот самый день»<br>Масло, холст 30×24 см</p>
     </div>
     <div class="gallery-item">
-      <img src="Ikar.jpg" alt="«Дотянуться до солнца"">
+      <img src="Ikar.jpg" alt="«Дотянуться до солнца»">
       <p class="caption">«Дотянуться до солнца»<br>Масло, холст 100×50 см</p>
     </div>
     <div class="gallery-item">
-      <img src="Seoul(80x40).jpg" alt="«Осенний Сеул"">
+      <img src="Seoul(80x40).jpg" alt="«Осенний Сеул»">
       <p class="caption">«Осенний Сеул»<br>Масло, холст 80×40 см</p>
     </div>
     <div class="gallery-item">
-      <img src="fall(105x75).jpg" alt="«Осенью"">
+      <img src="fall(105x75).jpg" alt="«Осенью»">
       <p class="caption">«Осенью»<br>Масло, холст 105×75 см</p>
     </div>
     <div class="gallery-item">
-      <img src="konf(24x18).jpg" alt="«Конфетти"">
+      <img src="konf(24x18).jpg" alt="«Конфетти»">
       <p class="caption">«Конфетти»<br>Масло, картон 24×18 см</p>
     </div>
     <div class="gallery-item">
-      <img src="croc(90x60).jpg" alt="«Без-дна"">
+      <img src="croc(90x60).jpg" alt="«Без-дна»">
       <p class="caption">«Без-дна»<br>Масло, холст 90×60 см</p>
     </div>
     <div class="gallery-item">
-      <img src="zakat(100x70).jpg" alt="«Интересно, что будет завтра?"">
+      <img src="zakat(100x70).jpg" alt="«Интересно, что будет завтра?»">
       <p class="caption">«Интересно, что будет завтра?»<br>Масло, холст 100×70 см</p>
     </div>
   </div>
