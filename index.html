@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vadim Oz — Художник</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background: #000;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .artwork {
+      background: white;
+      padding: 0.5em;
+      border-radius: 8px;
+    }
+    .artwork h3 {
+      margin: 0.2em 0 0.1em;
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vadim Oz</h1>
+    <p>портфолио художника</p>
+  </header>
+  <main>
+    <section>
+      <h2>Обо мне</h2>
+      <p>Пишу маслом и углём на холсте и фанере. В картинах исследую внутренние состояния, переломы, моменты необратимого. Раньше снимал и публиковался как тревел-фотограф. Сейчас работаю с телесной памятью, образом, границами и молчанием.</p>
+    </section>
+
+    <section>
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <div class="artwork">
+          <img src="images/1.jpg" alt="Мосты горят, и я сгораю вместе с ними" />
+          <h3>Мосты горят, и я сгораю вместе с ними</h3>
+          <p>100×70, масло на холсте</p>
+        </div>
+        <div class="artwork">
+          <img src="images/2.jpg" alt="Опустошение" />
+          <h3>Опустошение</h3>
+          <p>105×75, масло на фанере</p>
+        </div>
+        <div class="artwork">
+          <img src="images/3.jpg" alt="Вина!" />
+          <h3>Вина!</h3>
+          <p>90×80, масло на холсте</p>
+        </div>
+        <div class="artwork">
+          <img src="images/4.jpg" alt="Слишком поздно" />
+          <h3>Слишком поздно</h3>
+          <p>100×70, масло на холсте</p>
+        </div>
+        <div class="artwork">
+          <img src="images/5.jpg" alt="Любопытство" />
+          <h3>Любопытство</h3>
+          <p>25×20, масло на фанере</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p><strong>Telegram:</strong> <a href="https://t.me/place_for_art">@place_for_art</a></p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Vadim Oz
+  </footer>
+</body>
+</html>
