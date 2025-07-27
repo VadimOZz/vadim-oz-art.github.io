@@ -6,135 +6,98 @@
   <title>Художник Вадим Золотарёв — Портфолио</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #222;
+      background-color: #fdfaf6;
+      color: #333;
+      line-height: 1.6;
     }
-
-    .site-header {
+    header {
       text-align: center;
-      padding: 60px 20px 20px;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: 60px 20px 30px;
     }
-
-    .main-title {
-      font-size: 32px;
-      font-weight: 600;
+    header h1 {
       margin: 0;
-      letter-spacing: 0.3px;
+      font-size: 36px;
     }
-
-    .subtitle {
+    header h2 {
+      margin: 10px 0 0;
       font-size: 20px;
-      margin: 8px 0 0;
       color: #666;
       font-weight: normal;
+      letter-spacing: 1px;
     }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      gap: 30px;
-    }
-
-    .gallery-item {
-      margin: 12px;
-      max-width: 90vw;
-      transition: box-shadow 0.3s ease;
-    }
-
-    .gallery-item img {
-      max-width: 100%;
-      max-height: 90vh;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-radius: 4px;
-    }
-
-    .gallery-item img:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .caption {
-      margin-top: 8px;
-      text-align: center;
-      font-size: 14px;
-      color: #444;
-    }
-
-    .caption strong {
-      display: block;
-      font-weight: bold;
-    }
-
-    section {
+    .about, .contacts {
       max-width: 800px;
       margin: 60px auto;
       padding: 0 20px;
     }
-
-    section h3 {
-      margin-top: 60px;
-      padding-top: 40px;
-      border-top: 1px solid #ccc;
-      font-size: 1.4em;
+    .about h2, .contacts h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
     }
-
-    .about {
-      max-width: 800px;
-      margin: 40px auto 20px;
-      padding: 0 20px;
-      line-height: 1.6;
-      font-size: 15px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-
-    .contacts {
+    .gallery-item {
       text-align: center;
-      margin: 50px 0 60px;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 8px;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .gallery-item .title {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .gallery-item .size {
       font-size: 14px;
-      color: #333;
+      color: #555;
     }
-
+    .contacts {
+      background: #f4f1ec;
+      padding: 40px 20px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+    }
+    .contacts p {
+      margin: 10px 0;
+    }
     .contacts a {
-      color: #444;
+      color: #1a0dab;
       text-decoration: none;
+      font-weight: 500;
     }
-
-    .contacts a:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 600px) {
-      .main-title {
+      header h1 {
         font-size: 26px;
       }
-
-      .subtitle {
-        font-size: 18px;
-      }
-
-      .caption {
-        font-size: 13px;
-      }
-
-      .about, .contacts {
-        font-size: 14px;
+      .gallery-item {
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="main-title">Художник Вадим Золотарёв</h1>
-    <h2 class="subtitle">Портфолио</h2>
+  <header>
+    <h1>Художник Вадим Золотарёв</h1>
+    <h2>Портфолио</h2>
   </header>
 
   <div class="gallery">
@@ -221,33 +184,28 @@
   </div>
 
   <section>
-    <h3>О художнике</h3>
-    <p>
-      Вадим Золотарёв — художник, фотограф, психоаналитик и путешественник, побывавший более чем в пятидесяти странах.
-      Его творческий путь начался с фотографии: дважды его работы были отобраны National Geographic для уличных выставок на Никольской улице в Москве.
-      Переход к живописи стал продолжением этого пути — способом исследовать и передать переплетение внутреннего опыта с образами мира,
-      с пережитым и запечатлённым через тело и взгляд.
-    </p>
-    <p>
-      В своих работах Вадим ищет точку соприкосновения между внешним и внутренним, уязвимостью и сопротивлением, болью и её преодолением,
-      увиденным и незамеченным. Его живопись — напряжённый разговор с собой и с миром, попытка выразить невыразимое средствами цвета,
-      фактуры, формы и тишины. Стиль художника балансирует между сном и реальностью, с постоянным стремлением к подлинности переживания.
-    </p>
+      <h3>О художнике</h3>
+      <p>
+        Вадим Золотарёв — художник, фотограф, психоаналитик и путешественник, побывавший более чем в пятидесяти странах. Его творческий путь начался с фотографии: дважды его работы были отобраны National Geographic для уличных выставок на Никольской улице в Москве. Переход к живописи стал продолжением этого пути — способом исследовать и передать переплетение внутреннего опыта с образами мира, с пережитым и запечатлённым через тело и взгляд.
+      </p>
+      <p>
+        В своих работах Вадим ищет точку соприкосновения между внешним и внутренним, уязвимостью и сопротивлением, болью и её преодолением, увиденным и незамеченным. Его живопись — напряжённый разговор с собой и с миром, попытка выразить невыразимое средствами цвета, фактуры, формы и тишины. Стиль художника балансирует между сном и реальностью, с постоянным стремлением к подлинности переживания.
+      </p>
+    </section>
 
-    <h3>Выставки</h3>
-    <ul>
-      <li>2025 — «Лето в городе В», Дом Архитектора, Воронеж (групповая выставка)</li>
-      <li>2025 — «Смелость и нежность: женский образ в искусстве», Дом Архитектора, Воронеж (групповая выставка)</li>
-      <li>2025 — «Нога и берёза», Дом Архитектора, Воронеж (групповая выставка)</li>
-      <li>2020 — «Япония: страна, где всё иначе», фотовыставка National Geographic, Москва (открытая экспозиция на Никольской улице)</li>
-      <li>2018 — «Моя Япония», фотовыставка National Geographic, Москва (открытая экспозиция на Никольской улице)</li>
-    </ul>
+    <section>
+      <h3>Участие в выставках</h3>
+      <p>2024 — «Тело. Город. Переход». Арт-пространство, Воронеж</p>
+      <p>2023 — Участие в онлайн-выставке молодых художников «Присутствие»</p>
+      <p>2022 — Арт-резиденция «Место встречи», Калужская область</p>
+    </section>
 
-    <h3>Контакты</h3>
-    <p class="contact">
-      Telegram: <a href="https://t.me/place_for_art" target="_blank">@place_for_art</a><br />
-      Email: <a href="mailto:place-to-talk@yandex.ru">place-to-talk@yandex.ru</a>
-    </p>
-  </section>
+    <section class="contact">
+      <h3>Контакты</h3>
+      <p>Email: <a href="mailto:place-to-talk@yandex.ru">place-to-talk@yandex.ru</a></p>
+      <p>Telegram: <a href="https://t.me/vadimoz" target="_blank">@vadimoz</a></p>
+      <p>Instagram: <a href="https://instagram.com/vadimoz" target="_blank">@vadimoz</a></p>
+    </section>
+  </main>
 </body>
 </html>
