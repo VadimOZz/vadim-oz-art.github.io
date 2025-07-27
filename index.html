@@ -34,7 +34,10 @@
       margin: 0 auto;
     }
     .gallery-item {
-      text-align: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    padding: 0.5rem;
     }
     .gallery-item img {
       width: 100%;
@@ -42,8 +45,10 @@
       border-radius: 6px;
       transition: box-shadow 0.3s ease;
     }
-    .gallery-item img:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    .gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f7f3ef;
     }
     .caption {
       margin-top: 0.6rem;
