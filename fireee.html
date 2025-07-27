@@ -17,20 +17,31 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     .full-image-container img {
       max-width: 100%;
+      max-height: 90vh;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     .description {
       font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
+      line-height: 1.8;
+      max-width: 800px;
+    }
+    .description h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .poem {
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: #5d4734;
+      white-space: pre-line;
     }
     .back-link {
       margin-top: 2rem;
@@ -43,6 +54,15 @@
     .back-link a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      .description h1 {
+        font-size: 1.4rem;
+      }
+      .description {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -51,7 +71,13 @@
     <div class="description">
       <h1>«Мосты горят, и я сгораю вместе с ними»</h1>
       <p>Масло, холст, 100×70 см</p>
-      <p>Картина о боли расставания, о моменте, когда ты идёшь вперёд, даже если всё горит за спиной — и ты сам вместе с этим. Основана на личной истории автора, в которой мосты сожжены не случайно, а по любви.</p>
+      <div class="poem">
+        не оборачивайся<br><br>
+        тот мост сгорел<br><br>
+        пылать — твой путь<br><br>
+        до тла<br><br>
+        к ней
+      </div>
     </div>
     <div class="back-link">
       <a href="index.html">← Вернуться в галерею</a>
