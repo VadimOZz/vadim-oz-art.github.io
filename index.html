@@ -1,32 +1,36 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Художник Вадим Золотарёв — Портфолио</title>
   <style>
     body {
-      margin: 0;
-      font-family: Georgia, serif;
+      font-family: Arial, sans-serif;
       background-color: #fdfaf7;
-      color: #222;
+      color: #333;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
       padding: 40px 20px 20px;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      font-weight: normal;
+      font-size: 2em;
+      margin-bottom: 0.2em;
     }
+
     header h2 {
-      margin: 0;
-      font-size: 1.2em;
+      font-size: 1.4em;
+      margin-top: 0;
       font-weight: normal;
-      letter-spacing: 2px;
-      color: #555;
+      color: #666;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -34,54 +38,58 @@
       padding: 20px;
       gap: 30px;
     }
-    .artwork {
-      max-width: 100%;
+
+    .gallery-item {
       width: 300px;
       text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .artwork img {
-      max-width: 100%;
+
+    .gallery-item img {
+      width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease;
     }
-    .artwork:hover img {
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-      transform: scale(1.01);
+
+    .gallery-item img:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    .artwork .title {
-      font-weight: bold;
+
+    .caption {
       margin-top: 8px;
     }
-    .artwork .size {
-      font-size: 0.9em;
-      color: #555;
+
+    .caption strong {
+      display: block;
+      font-weight: bold;
     }
+
     section {
       max-width: 800px;
-      margin: 60px auto 30px;
+      margin: 60px auto;
       padding: 0 20px;
     }
+
     section h3 {
-      border-top: 1px solid #ccc;
+      margin-top: 60px;
       padding-top: 40px;
-      font-size: 1.5em;
-      margin-bottom: 10px;
+      border-top: 1px solid #ccc;
+      font-size: 1.4em;
     }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9em;
-      color: #666;
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="main-title">Художник Вадим Золотарёв</h1>
-    <div class="subtitle">Портфолио</div>
+  <header>
+    <h1>Художник Вадим Золотарёв</h1>
+    <h2>Портфолио</h2>
   </header>
 
   <div class="gallery">
