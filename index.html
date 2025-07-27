@@ -3,14 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> Художник Вадим Золотарёв</title>
-   <title> Портфолио</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Художник Вадим Золотарёв — Портфолио</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #111;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .gallery-item img {
+      max-width: 90vw;
+      max-height: 90vh;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .caption {
+        font-size: 0.95em;
+        padding: 0 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Портфолио</h1>
   <div class="gallery">
 
+    <!-- Каждая из этих блоков — отдельная картина -->
     <div class="gallery-item">
       <img src="fireee(100x70).jpg" alt="fireee">
       <p class="caption">«Мосты горят, и я сгораю вместе с ними»<br>Масло, холст 100×70 см</p>
@@ -53,7 +104,7 @@
 
     <div class="gallery-item">
       <img src="dream(40x35).jpg" alt="dream">
-      <p class="caption">«Первый сон»<br>Размер: 40×35 см</p>
+      <p class="caption">«Первый сон»<br>Масло, холст 40×35 см</p>
     </div>
 
     <div class="gallery-item">
@@ -68,22 +119,22 @@
 
     <div class="gallery-item">
       <img src="Head.jpg" alt="Head">
-      <p class="caption">«Боль»<br>Масло, холст 40x30 см</p>
+      <p class="caption">«Боль»<br>Масло, холст 40×30 см</p>
     </div>
 
     <div class="gallery-item">
       <img src="EYE.jpg" alt="EYE">
-      <p class="caption">«Взгляд»<br>Масло, холст 30x30 см</p>
+      <p class="caption">«Взгляд»<br>Масло, холст 30×30 см</p>
     </div>
 
     <div class="gallery-item">
       <img src="RIO.jpg" alt="RIO">
-      <p class="caption">«Рио. Тот самый день»<br>Масло, холст 30x24</p>
+      <p class="caption">«Рио. Тот самый день»<br>Масло, холст 30×24 см</p>
     </div>
 
     <div class="gallery-item">
       <img src="Ikar.jpg" alt="Ikar">
-      <p class="caption">«Дотянуться до солнца»<br>Масло холст, 100x50</p>
+      <p class="caption">«Дотянуться до солнца»<br>Масло, холст 100×50 см</p>
     </div>
 
     <div class="gallery-item">
