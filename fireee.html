@@ -43,18 +43,27 @@
       white-space: pre-line;
     }
     .back-link {
-      margin-top: 2rem;
+      margin: 1.5rem 0;
       font-size: 0.95rem;
-      text-align: center;
+      align-self: flex-start;
     }
     .back-link a {
       color: #5d4734;
       text-decoration: none;
+      margin-left: 1rem;
     }
     .back-link a:hover {
       text-decoration: underline;
     }
-
+    .contact-message {
+      margin-top: 3rem;
+      font-size: 1rem;
+      color: #5d4734;
+    }
+    .contact-message a {
+      color: #5d4734;
+      text-decoration: underline;
+    }
     @media (max-width: 600px) {
       .description h1 {
         font-size: 1.4rem;
@@ -62,26 +71,46 @@
       .description {
         font-size: 1rem;
       }
+      .back-link {
+        margin-left: 0;
+        align-self: center;
+      }
     }
   </style>
 </head>
 <body>
   <div class="full-image-container">
+
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+
     <img src="fireee(100x70).jpg" alt="Картина «Мосты горят, и я сгораю вместе с ними», масло, холст, 100×70 см">
     <div class="description">
       <h1>«Мосты горят, и я сгораю вместе с ними»</h1>
       <p>Масло, холст, 100×70 см</p>
-      <p class="poem">
-не оборачивайся  
-тот мост сгорел  
-пылать — твой путь  
-до тла  
+      <div class="poem">
+не оборачивайся
+
+тот мост сгорел
+
+пылать — твой путь
+
+до тла
+
 к ней
-      </p>
+      </div>
+
+      <div class="contact-message">
+        Если вам откликнулась эта работа — <a href="https://t.me/твой_ник">напишите мне в Telegram</a>.<br>
+        Я открыт к продаже оригинала или обсуждению репродукции.
+      </div>
     </div>
-  </div>
-  <div class="back-link">
-    <a href="index.html">← Вернуться в галерею</a>
+
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+
   </div>
 </body>
 </html>
