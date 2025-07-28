@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Вино и вина — Vadim Oz</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
@@ -17,29 +16,36 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     .full-image-container img {
       max-width: 100%;
-      max-height: 80vh;
+      max-height: 90vh;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     .description {
       font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
+      line-height: 1.8;
+      max-width: 800px;
     }
     .description h1 {
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
     }
+    .poem {
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: #5d4734;
+      white-space: pre-line;
+    }
     .back-link {
       margin-top: 2rem;
       font-size: 0.95rem;
+      text-align: center;
     }
     .back-link a {
       color: #5d4734;
@@ -48,18 +54,44 @@
     .back-link a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      .description h1 {
+        font-size: 1.4rem;
+      }
+      .description {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="full-image-container">
-    <img src="wine(90x80).jpg" alt="Вино и вина">
+    <img src="wine(90x80).jpg" alt="Картина «Вино и вина», масло, холст, 90×80 см">
     <div class="description">
       <h1>«Вино и вина»</h1>
       <p>Масло, холст, 90×80 см</p>
+      <p class="poem">
+Вино и вина.  
+Их разделяет всего одна буква.  
+Но сколько бокалов нужно, чтобы хоть раз забыть?  
+  
+Бар был залит синим —  
+джаз, дым, гул голосов, всё сливалось в одно, неразличимое и неразделимое.  
+  
+Потом вошла она.  
+Рыжие волосы. Ни тени улыбки.  
+  
+Она была здесь не для кого-то.  
+  
+Я пил медленно и смотрел на неё.  
+Она была как та картина, которая сразу приковывает взгляд —  
+и больше уже не отпускает.
+      </p>
     </div>
-    <div class="back-link">
-      <a href="index.html">← Вернуться в галерею</a>
-    </div>
+  </div>
+  <div class="back-link">
+    <a href="index.html">← Вернуться в галерею</a>
   </div>
 </body>
 </html>
