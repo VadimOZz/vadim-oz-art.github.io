@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Обнимая пепел — Vadim Oz</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
@@ -17,29 +16,36 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     .full-image-container img {
       max-width: 100%;
-      max-height: 80vh;
+      max-height: 90vh;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     .description {
       font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
+      line-height: 1.8;
+      max-width: 800px;
     }
     .description h1 {
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
     }
+    .poem {
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: #5d4734;
+      white-space: pre-line;
+    }
     .back-link {
       margin-top: 2rem;
       font-size: 0.95rem;
+      text-align: center;
     }
     .back-link a {
       color: #5d4734;
@@ -48,18 +54,39 @@
     .back-link a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      .description h1 {
+        font-size: 1.4rem;
+      }
+      .description {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="full-image-container">
-    <img src="sp(100x70).jpg" alt="Обнимая пепел">
+    <img src="sp(100x70).jpg" alt="Картина «Обнимая пепел», масло, холст, 100×70 см">
     <div class="description">
       <h1>«Обнимая пепел»</h1>
       <p>Масло, холст, 100×70 см</p>
+      <p class="poem">
+Поддерживать. Удерживать. Держаться.  
+Такие похожие — и такие разные слова.  
+И так легко в них запутаться.  
+  
+Особенно,  
+когда хочется  
+не отпускать.  
+Никогда.  
+Никогда.  
+Никогда.
+      </p>
     </div>
-    <div class="back-link">
-      <a href="index.html">← Вернуться в галерею</a>
-    </div>
+  </div>
+  <div class="back-link">
+    <a href="index.html">← Вернуться в галерею</a>
   </div>
 </body>
 </html>
