@@ -42,32 +42,28 @@
       color: #5d4734;
       white-space: pre-line;
     }
-    .contact-block {
-      margin-top: 2.5rem;
-      font-size: 1rem;
-      color: #5d4734;
-    }
-    .contact-block a {
-      color: #5d4734;
-      text-decoration: none;
-    }
-    .contact-block a:hover {
-      text-decoration: underline;
-    }
     .back-link {
-      margin: 2rem auto 1rem;
+      margin: 1.5rem 0;
       font-size: 0.95rem;
-      max-width: 800px;
-      text-align: left;
+      align-self: flex-start;
     }
     .back-link a {
       color: #5d4734;
       text-decoration: none;
+      margin-left: 1rem;
     }
     .back-link a:hover {
       text-decoration: underline;
     }
-
+    .contact-message {
+      margin-top: 3rem;
+      font-size: 1rem;
+      color: #5d4734;
+    }
+    .contact-message a {
+      color: #5d4734;
+      text-decoration: underline;
+    }
     @media (max-width: 600px) {
       .description h1 {
         font-size: 1.4rem;
@@ -76,34 +72,45 @@
         font-size: 1rem;
       }
       .back-link {
-        text-align: center;
+        margin-left: 0;
+        align-self: center;
       }
     }
   </style>
 </head>
 <body>
-  <div class="back-link">
-    <a href="index.html">← Вернуться в галерею</a>
-  </div>
-
   <div class="full-image-container">
+
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+
     <img src="fireee(100x70).jpg" alt="Картина «Мосты горят, и я сгораю вместе с ними», масло, холст, 100×70 см">
     <div class="description">
       <h1>«Мосты горят, и я сгораю вместе с ними»</h1>
       <p>Масло, холст, 100×70 см</p>
       <div class="poem">
-        не оборачивайся  
-        тот мост сгорел  
-        пылать — твой путь  
-        до тла  
-        к ней
+не оборачивайся
+
+тот мост сгорел
+
+пылать — твой путь
+
+до тла
+
+к ней
       </div>
-      <div class="contact-block">
-        Если вам откликнулась эта работа — напишите мне в Telegram:
-        <a href="https://t.me/vadim_ozz" target="_blank">@vadim_ozz</a>.
+
+      <div class="contact-message">
+        Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
         Картина доступна для покупки.
       </div>
     </div>
+
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+
   </div>
 </body>
 </html>
