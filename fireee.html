@@ -4,109 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мосты горят, и я сгораю вместе с ними — Vadim Oz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdfbf9;
-      color: #3d3d3d;
+      font-family: 'Cormorant Garamond', serif;
+      background-color: #f8f6f4;
+      background-image: url('texture.jpg'); /* можно загрузить полупрозрачную текстуру бумаги или холста */
+      background-size: cover;
+      color: #2e2e2e;
     }
     .full-image-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
     .full-image-container img {
       max-width: 100%;
-      max-height: 90vh;
+      max-height: 85vh;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
+      border: 1px solid #ccc;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2.5rem;
     }
     .description {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      max-width: 800px;
+      font-size: 1.3rem;
+      line-height: 1.9;
+      max-width: 820px;
     }
     .description h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
     }
     .poem {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       font-style: italic;
-      color: #5d4734;
+      color: #5a3a29;
       white-space: pre-line;
     }
     .back-link {
-      margin: 1.5rem 0;
-      font-size: 0.95rem;
-      align-self: flex-start;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-size: 1rem;
     }
     .back-link a {
-      color: #5d4734;
+      color: #5a3a29;
       text-decoration: none;
-      margin-left: 1rem;
     }
     .back-link a:hover {
       text-decoration: underline;
     }
     .contact-message {
-      margin-top: 3rem;
-      font-size: 1rem;
-      color: #5d4734;
+      margin-top: 3.5rem;
+      font-size: 1.1rem;
+      color: #5a3a29;
     }
     .contact-message a {
-      color: #5d4734;
+      color: #5a3a29;
       text-decoration: underline;
     }
     @media (max-width: 600px) {
       .description h1 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
       }
       .description {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
       .back-link {
-        margin-left: 0;
-        align-self: center;
+        position: static;
+        margin-bottom: 1rem;
       }
     }
   </style>
 </head>
 <body>
+  <div class="back-link">
+    <a href="index.html">← Вернуться в галерею</a>
+  </div>
+
   <div class="full-image-container">
-
-    <div class="back-link">
-      <a href="index.html">← Вернуться в галерею</a>
-    </div>
-
     <img src="fireee(100x70).jpg" alt="Картина «Мосты горят, и я сгораю вместе с ними», масло, холст, 100×70 см">
+
     <div class="description">
-      <h1>«Мосты горят, и я сгораю вместе с ними»</h1>
+      <h1>Мосты горят, и я сгораю вместе с ними</h1>
       <p>Масло, холст, 100×70 см</p>
+
       <div class="poem">
 не оборачивайся
+
 тот мост сгорел
+
 пылать — твой путь
+
 до тла
+
 к ней
       </div>
 
       <div class="contact-message">
-        Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
+        Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz">напишите мне в Telegram</a>.<br>
         Картина доступна для покупки.
       </div>
     </div>
-
-    <div class="back-link">
-      <a href="index.html">← Вернуться в галерею</a>
-    </div>
-
   </div>
 </body>
 </html>
