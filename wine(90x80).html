@@ -3,50 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Вино и вина — Vadim Oz</title>
+  <title>Обнимая пепел — Vadim Oz</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdfbf9;
-      color: #3d3d3d;
-    }
-    .full-image-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .full-image-container img {
-      max-width: 100%;
-      max-height: 90vh;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
-    }
-    .description {
-      font-size: 1.1rem;
+      padding: 2rem;
+      font-family: 'Georgia', serif;
+      background: url('parchment-texture78.jpg') center/cover no-repeat fixed;
+      background-color: #f8f3e8;
+      color: #2d2d2d;
       line-height: 1.8;
-      max-width: 800px;
     }
-    .description h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #5d4734;
+    }
+    .painting {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     .poem {
-      margin-top: 1.5rem;
       font-style: italic;
-      color: #5d4734;
       white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
+    }
+    .contact-message {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #d2dbe9;
+      padding: 1rem;
+      border-left: 4px solid #99ccff;
+    }
+    .contact-message a {
+      color: #5d4734;
+      text-decoration: underline;
     }
     .back-link {
-      margin-top: 2rem;
       font-size: 0.95rem;
-      text-align: center;
+      margin-bottom: 1.2rem;
     }
+    .back-link.bottom {
+  margin-top: 2rem;
+}
     .back-link a {
       color: #5d4734;
       text-decoration: none;
@@ -54,24 +70,29 @@
     .back-link a:hover {
       text-decoration: underline;
     }
-
     @media (max-width: 600px) {
-      .description h1 {
-        font-size: 1.4rem;
+      body {
+        padding: 1rem;
       }
-      .description {
-        font-size: 1rem;
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="full-image-container">
-    <img src="wine(90x80).jpg" alt="Картина «Вино и вина», масло, холст, 90×80 см">
-    <div class="description">
+  <div class="container">
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+    
+    <img class="painting" src="wine(90x80).jpg" alt="Картина «Вино и вина», масло, холст, 90×80 см">
       <h1>«Вино и вина»</h1>
-      <p>Масло, холст, 90×80 см</p>
-      <p class="poem">
+      <div class="subtitle">Масло, холст, 90×80 см</div>
+      <div class="poem">
 Вино и вина.  
 Их разделяет всего одна буква.  
 Но сколько бокалов нужно, чтобы хоть раз забыть?  
@@ -87,11 +108,16 @@
 Я пил медленно и смотрел на неё.  
 Она была как та картина, которая сразу приковывает взгляд —  
 и больше уже не отпускает.
-      </p>
+         </div>
+
+    <div class="contact-message">
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения. 
     </div>
-  </div>
-  <div class="back-link">
-    <a href="index.html">← Вернуться в галерею</a>
+
+    <div class="back-link bottom">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
   </div>
 </body>
 </html>
