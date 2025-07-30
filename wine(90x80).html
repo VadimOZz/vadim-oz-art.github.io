@@ -13,17 +13,14 @@
       background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
-      display: flex;
-      justify-content: center;
     }
     .container {
-      display: inline-block;
+      max-width: 900px;
+      margin: 0 auto;
       padding: 1.5rem 2rem 2rem;
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      text-align: left;
-      max-width: 100%;
     }
     h1 {
       font-size: 2rem;
@@ -34,14 +31,18 @@
       margin-bottom: 0.4rem;
       color: #080129;
     }
+    .image-wrapper {
+      display: inline-block;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin: 0 auto 1.5rem;
+    }
     .painting {
       display: block;
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      object-fit: contain;
       border-radius: 8px;
-      margin: 0 auto 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     .poem {
       font-style: italic;
@@ -100,24 +101,25 @@
       <a href="index.html">← Вернуться в галерею</a>
     </div>
 
-    <img class="painting" src="wine(90x80).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
+    <div class="image-wrapper">
+      <img class="painting" src="wine(90x80).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
+    </div>
 
     <h1>Вино и вина</h1>
     <div class="subtitle">Масло, холст, 90×80 см</div>
-
     <div class="poem">
 Вино и вина.  
 Их разделяет всего одна буква.  
 Но сколько бокалов нужно, чтобы хоть раз забыть?  
-  
+
 Бар был залит синим —  
 джаз, дым, гул голосов, всё сливалось в одно, неразличимое и неразделимое.  
-  
+
 Потом вошла она.  
 Рыжие волосы. Ни тени улыбки.  
-  
+
 Она была здесь не для кого-то.  
-  
+
 Я пил медленно и смотрел на неё.  
 Она была как та картина, которая сразу приковывает взгляд —  
 и больше уже не отпускает.
