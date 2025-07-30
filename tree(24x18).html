@@ -4,42 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Старый дворик в Сеуле — Vadim Oz</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdfbf9;
-      color: #3d3d3d;
-    }
-    .full-image-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       padding: 2rem;
-      text-align: center;
+      font-family: 'Georgia', serif;
+      background: url('parchment-texture71.jpg') center/cover no-repeat fixed;
+      background-color: #ffe8d0;
+      color: #2d2d2d;
+      line-height: 1.8;
     }
-    .full-image-container img {
-      max-width: 100%;
-      max-height: 80vh;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1.5rem;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
-    .description {
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+    .subtitle {
       font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
+      margin-bottom: 0.4rem;
     }
-    .description h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+    .painting {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .poem {
+      font-style: italic;
+      white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
+
+      }
+      .artist-signature {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+
+    }
+    .contact-message {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #e7d3c6;
+      padding: 1rem;
+      border-left: 4px solid #eead60;
+    }
+    .contact-message a {
+      color: #5d4734;
+      text-decoration: underline;
     }
     .back-link {
-      margin-top: 2rem;
       font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+    .back-link.bottom {
+      margin-top: 2rem;
     }
     .back-link a {
       color: #5d4734;
@@ -48,18 +78,44 @@
     .back-link a:hover {
       text-decoration: underline;
     }
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="full-image-container">
-    <img src="tree(24x18).jpg" alt="Старый дворик в Сеуле">
-    <div class="description">
-      <h1>«Старый дворик в Сеуле»</h1>
-      <p>Масло, холст, 24×18 см</p>
-    </div>
-    <div class="back-link">
+  <main class="container">
+    <nav class="back-link">
       <a href="index.html">← Вернуться в галерею</a>
-    </div>
-  </div>
+    </nav>
+    <img class="painting" src="tree(24x18).jpg" alt="Оригинальная картина Вадим Золотарёва «Старый дворик в Сеуле», масло, холст, 24×18 см">
+      <h1>«Старый дворик в Сеуле»</h1>
+       <div class="subtitle">Масло, холст, 24×18 см</div>
+          <div class="poem">
+Тихий дворик, крошечное пятно красного среди серых крыш.
+Здесь поселилась осень.
+И память.
+        </div>
+ <p class="artist-signature">
+  Оригинальная работа<br>
+  Вадима Золотарёва
+</p>
+    <section class="contact-message">
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank" rel="noopener noreferrer">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения.
+    </section>
+
+    <nav class="back-link bottom">
+      <a href="index.html">← Вернуться в галерею</a>
+    </nav>
+  </main>
 </body>
 </html>
