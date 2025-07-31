@@ -10,7 +10,7 @@
       padding: 2rem;
       font-family: 'Georgia', serif;
       background: url('fon7.jpg') center/cover no-repeat fixed;
-      background-color: #ffe8d0;
+      background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
     }
@@ -29,14 +29,20 @@
     .subtitle {
       font-size: 1.1rem;
       margin-bottom: 0.4rem;
+      color: #080129;
+    }
+    .image-wrapper {
+      display: inline-block;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin: 0 auto 1.5rem;
     }
     .painting {
+      display: block;
       width: 100%;
-      max-height: 80vh;
-      object-fit: contain;
+      height: auto;
       border-radius: 8px;
-      margin-bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     .poem {
       font-style: italic;
@@ -61,7 +67,7 @@
     .contact-message a {
       color: #5d4734;
       text-decoration: underline;
-    }
+     }
     .back-link {
       font-size: 0.95rem;
       margin-bottom: 1.2rem;
@@ -70,7 +76,7 @@
       margin-top: 2rem;
     }
     .back-link a {
-      color: #5d4734;
+      color: #080129;
       text-decoration: none;
     }
     .back-link a:hover {
@@ -90,11 +96,14 @@
   </style>
 </head>
 <body>
-  <main class="container">
-    <nav class="back-link">
+  <div class="container">
+    <div class="back-link">
       <a href="index.html">← Вернуться в галерею</a>
-    </nav>
+    </div>
+
+    <div class="image-wrapper">
     <img class="painting" src="vrn(50x40).jpg" alt="Оригинальная картина Вадима Золотарёва «Сумерки над водой», масло, холст, 50×40 см">
+      </div>
     <h1>«Сумерки над водой»</h1>
     <div class="subtitle">Масло, холст, 50×40 см</div>
     <div class="poem">
@@ -105,18 +114,20 @@
 
 Иногда вечер опускается так медленно...
     </div>
+
     <p class="artist-signature">
       Оригинальная работа<br>
-      Вадима Золотарёва
+      <em>Вадима Золотарёва</em>
     </p>
-    <section class="contact-message">
+
+    <div class="contact-message">
       Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank" rel="noopener noreferrer">напишите мне в Telegram</a>.<br>
       Картина доступна для приобретения.
-    </section>
+    </div>
 
-    <nav class="back-link bottom">
+    <div class="back-link bottom">
       <a href="index.html">← Вернуться в галерею</a>
-    </nav>
-  </main>
+    </div>
+  </div>
 </body>
 </html>
