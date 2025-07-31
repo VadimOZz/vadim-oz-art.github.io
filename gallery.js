@@ -30,24 +30,19 @@ const galleryPages = [
   const prevIndex = (currentIndex - 1 + galleryPages.length) % galleryPages.length;
   const nextIndex = (currentIndex + 1) % galleryPages.length;
 
-  const navContainer = document.createElement("div");
-  navContainer.className = "gallery-nav";
-
   const prevLink = document.createElement("a");
   prevLink.href = galleryPages[prevIndex];
-  prevLink.textContent = "← Предыдущая";
+  prevLink.className = "nav-arrow prev";
+  prevLink.textContent = "←";
 
   const nextLink = document.createElement("a");
   nextLink.href = galleryPages[nextIndex];
-  nextLink.textContent = "Следующая →";
+  nextLink.className = "nav-arrow next";
+  nextLink.textContent = "→";
 
-  navContainer.appendChild(prevLink);
-  navContainer.appendChild(nextLink);
-
-document.addEventListener("DOMContentLoaded", () => {
-  const navPlaceholder = document.getElementById("gallery-nav");
-  if (navPlaceholder) {
-    navPlaceholder.appendChild(navContainer);
-  }
-});
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".container");
+    container.appendChild(prevLink);
+    container.appendChild(nextLink);
+  });
 })();
