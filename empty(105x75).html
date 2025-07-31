@@ -34,7 +34,6 @@
     }
     .painting-wrapper {
       position: relative;
-      padding: 0 1.5rem;
     }
     .painting {
       width: 100%;
@@ -55,24 +54,20 @@
       transition: opacity 0.3s;
       z-index: 10;
     }
-
     .gallery-nav-button:hover {
       opacity: 0.8;
       cursor: pointer;
     }
-
     .gallery-nav-button.left {
       left: -1.5rem;
       border-width: 20px 28px 20px 0;
       border-color: transparent #080129 transparent transparent;
     }
-
     .gallery-nav-button.right {
       right: -1.5rem;
       border-width: 20px 0 20px 28px;
       border-color: transparent transparent transparent #080129;
     }
-
     .artist-signature {
       font-style: italic;
       color: #666;
@@ -133,23 +128,25 @@
     </div>
 
     <div class="painting-wrapper">
-      <div class="gallery-nav-button left" onclick="navigateGallery(-1)"></div>
+      <a class="gallery-nav-button left"></a>
       <img class="painting" src="empty(105x75).jpg" alt="Оригинальная картина Вадима Золотарёва «Опустошение», масло, холст, 105×75 см">
-      <div class="gallery-nav-button right" onclick="navigateGallery(1)"></div>
+      <a class="gallery-nav-button right"></a>
     </div>
 
     <h1>Опустошение</h1>
     <div class="subtitle">Масло, холст, 105×75 см</div>
 
     <div class="poem">
-Поддерживать. Удерживать. Держаться.<br>
-Такие похожие — и такие разные слова.<br>
-И так легко в них запутаться.<br><br>
-Особенно,<br>
-когда хочется<br>
-не отпускать.<br><br>
-Никогда.<br>
-Никогда.<br>
+Поддерживать. Удерживать. Держаться.
+Такие похожие — и такие разные слова.
+И так легко в них запутаться.
+
+Особенно,
+когда хочется
+не отпускать.
+        
+Никогда.
+Никогда.
 Никогда.
     </div>
 
@@ -168,7 +165,6 @@
     </div>
   </div>
 
-  <!-- Подключение gallery.js -->
   <script src="gallery.js"></script>
 </body>
 </html>
