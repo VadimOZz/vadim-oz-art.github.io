@@ -30,21 +30,11 @@ const galleryPages = [
   const prevIndex = (currentIndex - 1 + galleryPages.length) % galleryPages.length;
   const nextIndex = (currentIndex + 1) % galleryPages.length;
 
-  const navLeft = document.createElement("a");
-  navLeft.href = galleryPages[prevIndex];
-  navLeft.textContent = "←";
-  navLeft.className = "gallery-nav-button left";
-
-  const navRight = document.createElement("a");
-  navRight.href = galleryPages[nextIndex];
-  navRight.textContent = "→";
-  navRight.className = "gallery-nav-button right";
-
   document.addEventListener("DOMContentLoaded", () => {
-    const painting = document.querySelector(".painting");
-    if (painting) {
-      painting.insertAdjacentElement("beforebegin", navLeft);
-      painting.insertAdjacentElement("beforebegin", navRight);
-    }
+    const leftBtn = document.querySelector(".gallery-nav-button.left");
+    const rightBtn = document.querySelector(".gallery-nav-button.right");
+
+    if (leftBtn) leftBtn.href = galleryPages[prevIndex];
+    if (rightBtn) rightBtn.href = galleryPages[nextIndex];
   });
 })();
