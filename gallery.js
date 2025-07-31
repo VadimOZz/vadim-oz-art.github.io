@@ -44,7 +44,10 @@ const galleryPages = [
   navContainer.appendChild(prevLink);
   navContainer.appendChild(nextLink);
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.appendChild(navContainer);
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  const navPlaceholder = document.getElementById("gallery-nav");
+  if (navPlaceholder) {
+    navPlaceholder.appendChild(navContainer);
+  }
+});
 })();
