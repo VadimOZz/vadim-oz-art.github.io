@@ -45,6 +45,24 @@
       color: #444;
       margin: 1rem 0;
     }
+  .gallery-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .gallery-nav a {
+    text-decoration: none;
+    color: #080129;
+    padding: 0.3em 0.6em;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+
+  .gallery-nav a:hover {
+    background: #d2dbe9;
+    
     .contact-message {
       margin-top: 2rem;
       font-size: 1rem;
@@ -90,6 +108,7 @@
     </div>
     
     <img class="painting"  src="sp(100x70).jpg" alt="Картина «Обнимая пепел», масло, холст, 100×70 см">
+    <div id="gallery-nav"></div>
     <div class="description">
       <h1>Обнимая пепел</h1>
        <div class="subtitle">Масло, холст, 100×70 см</div>
@@ -115,5 +134,6 @@
       <a href="index.html">← Вернуться в галерею</a>
     </div>
   </div>
+  <script src="gallery.js"></script>
 </body>
 </html>
