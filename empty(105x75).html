@@ -44,33 +44,33 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     .gallery-nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255, 255, 255, 0.3);
-      color: #080129;
-      font-size: 2rem;
-      text-decoration: none;
-      padding: 0.4em 0.6em;
-      border-radius: 50%;
-      transition: background 0.3s;
-      z-index: 10;
-    }
-    .gallery-nav-button:hover {
-      background: rgba(255, 255, 255, 0.6);
-    }
-    .gallery-nav-button.left {
-      left: -1.5rem;
-    }
-    .gallery-nav-button.right {
-      right: -1.5rem;
-    }
-    .poem {
-      font-style: italic;
-      white-space: pre-line;
-      color: #444;
-      margin: 1rem 0;
-    }
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.gallery-nav-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.gallery-nav-button.left {
+  left: -1.5rem;
+  border-width: 20px 28px 20px 0;
+  border-color: transparent #080129 transparent transparent;
+}
+
+.gallery-nav-button.right {
+  right: -1.5rem;
+  border-width: 20px 0 20px 28px;
+  border-color: transparent transparent transparent #080129;
+}
     .artist-signature {
       font-style: italic;
       color: #666;
@@ -118,10 +118,12 @@
         padding: 0.3em 0.5em;
       }
       .gallery-nav-button.left {
-        left: -1rem;
+    left: -1rem;
+    border-width: 16px 24px 16px 0;
       }
-      .gallery-nav-button.right {
-        right: -1rem;
+      gallery-nav-button.right {
+    right: -1rem;
+    border-width: 16px 0 16px 24px;
       }
     }
   </style>
@@ -133,7 +135,9 @@
     </div>
 
     <div class="painting-wrapper">
+      <div class="gallery-nav-button left" onclick="navigateGallery(-1)"></div
       <img class="painting" src="empty(105x75).jpg" alt="Оригинальная картина Вадима Золотарёва «Опустошение», масло, холст, 105×75 см">
+      <div class="gallery-nav-button right" onclick="navigateGallery(1)"></div>
     </div>
 
     <h1>Опустошение</h1>
