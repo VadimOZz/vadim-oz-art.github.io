@@ -34,6 +34,7 @@
     }
     .painting-wrapper {
       position: relative;
+      padding: 0 1.5rem;
     }
     .painting {
       width: 100%;
@@ -44,33 +45,34 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     .gallery-nav-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  opacity: 0.4;
-  transition: opacity 0.3s;
-  z-index: 10;
-}
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      opacity: 0.4;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
 
-.gallery-nav-button:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
+    .gallery-nav-button:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
 
-.gallery-nav-button.left {
-  left: -1.5rem;
-  border-width: 20px 28px 20px 0;
-  border-color: transparent #080129 transparent transparent;
-}
+    .gallery-nav-button.left {
+      left: -1.5rem;
+      border-width: 20px 28px 20px 0;
+      border-color: transparent #080129 transparent transparent;
+    }
 
-.gallery-nav-button.right {
-  right: -1.5rem;
-  border-width: 20px 0 20px 28px;
-  border-color: transparent transparent transparent #080129;
-}
+    .gallery-nav-button.right {
+      right: -1.5rem;
+      border-width: 20px 0 20px 28px;
+      border-color: transparent transparent transparent #080129;
+    }
+
     .artist-signature {
       font-style: italic;
       color: #666;
@@ -113,17 +115,13 @@
       h1 {
         font-size: 1.5rem;
       }
-      .gallery-nav-button {
-        font-size: 1.5rem;
-        padding: 0.3em 0.5em;
-      }
       .gallery-nav-button.left {
-    left: -1rem;
-    border-width: 16px 24px 16px 0;
+        left: -1rem;
+        border-width: 16px 24px 16px 0;
       }
-      gallery-nav-button.right {
-    right: -1rem;
-    border-width: 16px 0 16px 24px;
+      .gallery-nav-button.right {
+        right: -1rem;
+        border-width: 16px 0 16px 24px;
       }
     }
   </style>
@@ -135,7 +133,7 @@
     </div>
 
     <div class="painting-wrapper">
-      <div class="gallery-nav-button left" onclick="navigateGallery(-1)"></div
+      <div class="gallery-nav-button left" onclick="navigateGallery(-1)"></div>
       <img class="painting" src="empty(105x75).jpg" alt="Оригинальная картина Вадима Золотарёва «Опустошение», масло, холст, 105×75 см">
       <div class="gallery-nav-button right" onclick="navigateGallery(1)"></div>
     </div>
@@ -144,16 +142,14 @@
     <div class="subtitle">Масло, холст, 105×75 см</div>
 
     <div class="poem">
-Поддерживать. Удерживать. Держаться.
-Такие похожие — и такие разные слова.
-И так легко в них запутаться.
-
-Особенно,
-когда хочется
-не отпускать.
-        
-Никогда.
-Никогда.
+Поддерживать. Удерживать. Держаться.<br>
+Такие похожие — и такие разные слова.<br>
+И так легко в них запутаться.<br><br>
+Особенно,<br>
+когда хочется<br>
+не отпускать.<br><br>
+Никогда.<br>
+Никогда.<br>
 Никогда.
     </div>
 
