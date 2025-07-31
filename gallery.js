@@ -24,7 +24,6 @@ const galleryPages = [
 (function () {
   const currentPage = window.location.pathname.split("/").pop();
   const currentIndex = galleryPages.indexOf(currentPage);
-
   if (currentIndex === -1) return;
 
   const prevIndex = (currentIndex - 1 + galleryPages.length) % galleryPages.length;
