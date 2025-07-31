@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Опустошение — Vadim Oz</title>
   <style>
     body {
@@ -10,7 +10,7 @@
       padding: 2rem;
       font-family: 'Georgia', serif;
       background: url('parchment-texture78.jpg') center/cover no-repeat fixed;
-         background-color: #f8f3e8;
+      background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
     }
@@ -21,6 +21,7 @@
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: relative;
     }
     h1 {
       font-size: 2rem;
@@ -31,6 +32,9 @@
       margin-bottom: 0.4rem;
       color: #080129;
     }
+    .painting-wrapper {
+      position: relative;
+    }
     .painting {
       width: 100%;
       max-height: 80vh;
@@ -39,12 +43,34 @@
       margin-bottom: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.3);
+      color: #080129;
+      font-size: 2rem;
+      text-decoration: none;
+      padding: 0.4em 0.6em;
+      border-radius: 50%;
+      transition: background 0.3s;
+      z-index: 10;
+    }
+    .gallery-nav-button:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+    .gallery-nav-button.left {
+      left: -1.5rem;
+    }
+    .gallery-nav-button.right {
+      right: -1.5rem;
+    }
     .poem {
       font-style: italic;
       white-space: pre-line;
       color: #444;
       margin: 1rem 0;
-      }
+    }
     .artist-signature {
       font-style: italic;
       color: #666;
@@ -58,7 +84,7 @@
       background-color: #d2dbe9;
       padding: 1rem;
       border-left: 4px solid #99ccff;
-   }
+    }
     .contact-message a {
       color: #080129;
       text-decoration: underline;
@@ -87,6 +113,16 @@
       h1 {
         font-size: 1.5rem;
       }
+      .gallery-nav-button {
+        font-size: 1.5rem;
+        padding: 0.3em 0.5em;
+      }
+      .gallery-nav-button.left {
+        left: -1rem;
+      }
+      .gallery-nav-button.right {
+        right: -1rem;
+      }
     }
   </style>
 </head>
@@ -95,12 +131,15 @@
     <div class="back-link">
       <a href="index.html">← Вернуться в галерею</a>
     </div>
-    
-    <img class="painting" src="empty(105x75).jpg" alt="Оригинальная картина Вадима Золотарёва «Опустошение», масло, холст, 105×75 см">
-      <h1>Опустошение</h1>
-      <div class="subtitle">Масло, холст, 105×75 см</div>
-      
-      <div class="poem">
+
+    <div class="painting-wrapper">
+      <img class="painting" src="empty(105x75).jpg" alt="Оригинальная картина Вадима Золотарёва «Опустошение», масло, холст, 105×75 см">
+    </div>
+
+    <h1>Опустошение</h1>
+    <div class="subtitle">Масло, холст, 105×75 см</div>
+
+    <div class="poem">
 Поддерживать. Удерживать. Держаться.
 Такие похожие — и такие разные слова.
 И так легко в них запутаться.
@@ -112,7 +151,7 @@
 Никогда.
 Никогда.
 Никогда.
-       </div>
+    </div>
 
     <p class="artist-signature">
       Оригинальная работа<br>
@@ -128,5 +167,8 @@
       <a href="index.html">← Вернуться в галерею</a>
     </div>
   </div>
+
+  <!-- Подключение gallery.js -->
+  <script src="gallery.js"></script>
 </body>
 </html>
