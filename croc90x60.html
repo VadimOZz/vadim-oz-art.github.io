@@ -1,77 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Без-дна — Vadim Oz</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdfbf9;
-      color: #3d3d3d;
-    }
-    .full-image-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .full-image-container img {
-      max-width: 100%;
-      max-height: 90vh;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
-    }
-    .description {
-      font-size: 1.1rem;
+      padding: 2rem;
+      font-family: 'Georgia', serif;
+      background: url('parchment-texture77.jpg') center/cover no-repeat fixed;
+      background-color: #f8f3e8;
+      color: #2d2d2d;
       line-height: 1.8;
-      max-width: 800px;
     }
-    .description h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: relative;
     }
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #080129;
+    }
+    .painting-wrapper {
+      position: relative;
+    }
+    .painting {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
     .poem {
-      margin-top: 1.5rem;
       font-style: italic;
-      color: #5d4734;
       white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
+    }
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      opacity: 0.45;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    .gallery-nav-button:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
+    .gallery-nav-button.left {
+      left: 1rem;
+      border-width: 20px 28px 20px 0;
+      border-color: transparent #7980ab transparent transparent;
+    }
+    .gallery-nav-button.right {
+      right: 1.5rem;
+      border-width: 20px 0 20px 28px;
+      border-color: transparent transparent transparent #7980ab;
+    }
+    .artist-signature {
+      font-style: italic;
+      color: #666;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      text-align: right;
+    }
+    .contact-message {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #d2dbe9;
+      padding: 1rem;
+      border-left: 4px solid #99ccff;
+    }
+    .contact-message a {
+      color: #080129;
+      text-decoration: underline;
     }
     .back-link {
-      margin-top: 2rem;
       font-size: 0.95rem;
-      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+    .back-link.bottom {
+      margin-top: 2rem;
     }
     .back-link a {
-      color: #5d4734;
+      color: #080129;
       text-decoration: none;
     }
     .back-link a:hover {
       text-decoration: underline;
     }
-
     @media (max-width: 600px) {
-      .description h1 {
-        font-size: 1.4rem;
+      body {
+        padding: 1rem;
       }
-      .description {
-        font-size: 1rem;
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .gallery-nav-button.left {
+        left: 0.6rem;
+        border-width: 16px 24px 16px 0;
+      }
+      .gallery-nav-button.right {
+        right: 0.6rem;
+        border-width: 16px 0 16px 24px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="full-image-container">
-    <img src="croc(90x60).jpg" alt="Картина «Без-дна», масло, холст, 90×60 см">
-    <div class="description">
-      <h1>«Без-дна»</h1>
-      <p>Масло, холст, 90×60 см</p>
-      <p class="poem">
+  <div class="container">
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+
+    <div class="painting-wrapper">
+    <img class="painting" src="croc(90x60).jpg" alt="Авторская картина Вадима Золотарёва «Без-дна», масло, холст, 90×60 см">
+    </div>
+      <h1>Без-дна</h1>
+      <div class="subtitle">Масло, холст, 90×60 см</div>
+     <div class="poem">
 Крокодил — одно из самых древних существ на Земле.  
 Его тело почти не изменилось за сотни миллионов лет.  
   
@@ -82,11 +149,19 @@
   
 И если быть беспечным,  
 можно провалиться в эту бездонную безмолвную черноту.
-      </p>
+      </div>
+
+    <p class="artist-signature">
+      Оригинальная работа<br>
+      <em>Вадима Золотарёва</em>
+    </p>
+
+    <div class="contact-message">
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения.
+    </div>
+
+    <div class="back-link bottom">
+      <a href="index.html">← Вернуться в галерею</a>
     </div>
   </div>
-  <div class="back-link">
-    <a href="index.html">← Вернуться в галерею</a>
-  </div>
-</body>
-</html>
