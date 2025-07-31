@@ -10,7 +10,7 @@
       padding: 2rem;
       font-family: 'Georgia', serif;
       background: url('parchment-texture711.jpg') center/cover no-repeat fixed;
-      background-color: #ffe8d0;
+      background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
     }
@@ -21,6 +21,7 @@
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: relative;
     }
     h1 {
       font-size: 2rem;
@@ -29,6 +30,10 @@
     .subtitle {
       font-size: 1.1rem;
       margin-bottom: 0.4rem;
+      color: #080129;
+    }
+    .painting-wrapper {
+      position: relative;
     }
     .painting {
       width: 100%;
@@ -38,30 +43,47 @@
       margin-bottom: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    .poem {
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      opacity: 0.4;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    .gallery-nav-button:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
+    .gallery-nav-button.left {
+      left: 1rem;
+      border-width: 20px 28px 20px 0;
+      border-color: transparent #7980ab transparent transparent;
+    }
+    .gallery-nav-button.right {
+      right: 1.5rem;
+      border-width: 20px 0 20px 28px;
+      border-color: transparent transparent transparent #7980ab;
+    }
+    .artist-signature {
       font-style: italic;
-      white-space: pre-line;
-      color: #444;
-      margin: 1rem 0;
-
-      }
-      .artist-signature {
-  font-style: italic;
-  color: #666;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  text-align: right;
-
+      color: #666;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      text-align: right;
     }
     .contact-message {
       margin-top: 2rem;
       font-size: 1rem;
-      background-color: #e7d3c6;
+      background-color: #d2dbe9;
       padding: 1rem;
-      border-left: 4px solid #781e1e;
+      border-left: 4px solid #99ccff;
     }
     .contact-message a {
-      color: #5d4734;
+      color: #080129;
       text-decoration: underline;
     }
     .back-link {
@@ -72,7 +94,7 @@
       margin-top: 2rem;
     }
     .back-link a {
-      color: #5d4734;
+      color: #080129;
       text-decoration: none;
     }
     .back-link a:hover {
@@ -88,34 +110,49 @@
       h1 {
         font-size: 1.5rem;
       }
+      .gallery-nav-button.left {
+        left: 0.6rem;
+        border-width: 16px 24px 16px 0;
+      }
+      .gallery-nav-button.right {
+        right: 0.6rem;
+        border-width: 16px 0 16px 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <main class="container">
-    <nav class="back-link">
+  <div class="container">
+    <div class="back-link">
       <a href="index.html">← Вернуться в галерею</a>
-    </nav>
+    </div>
+
+    <div class="painting-wrapper">
     <img class="painting" src="tree(24x18).jpg" alt="Оригинальная картина Вадим Золотарёва «Старый дворик в Сеуле», масло, холст, 24×18 см">
-      <h1>«Старый дворик в Сеуле»</h1>
+      </div>
+    <h1>«Старый дворик в Сеуле»</h1>
        <div class="subtitle">Масло, холст, 24×18 см</div>
           <div class="poem">
 Тихий дворик, крошечное красное пятно среди серых крыш.
 Здесь поселилась осень.
 И память.
-        </div>
- <p class="artist-signature">
-  Оригинальная работа<br>
-  Вадима Золотарёва
-</p>
-    <section class="contact-message">
-      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank" rel="noopener noreferrer">напишите мне в Telegram</a>.<br>
-      Картина доступна для приобретения.
-    </section>
+       </div>
 
-    <nav class="back-link bottom">
+    <p class="artist-signature">
+      Оригинальная работа<br>
+      <em>Вадима Золотарёва</em>
+    </p>
+
+    <div class="contact-message">
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения.
+    </div>
+
+    <div class="back-link bottom">
       <a href="index.html">← Вернуться в галерею</a>
-    </nav>
-  </main>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
 </body>
 </html>
