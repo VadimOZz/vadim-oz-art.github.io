@@ -30,19 +30,21 @@ const galleryPages = [
   const prevIndex = (currentIndex - 1 + galleryPages.length) % galleryPages.length;
   const nextIndex = (currentIndex + 1) % galleryPages.length;
 
-  const prevLink = document.createElement("a");
-  prevLink.href = galleryPages[prevIndex];
-  prevLink.className = "nav-arrow prev";
-  prevLink.textContent = "←";
+  const navLeft = document.createElement("a");
+  navLeft.href = galleryPages[prevIndex];
+  navLeft.textContent = "←";
+  navLeft.className = "gallery-nav-button left";
 
-  const nextLink = document.createElement("a");
-  nextLink.href = galleryPages[nextIndex];
-  nextLink.className = "nav-arrow next";
-  nextLink.textContent = "→";
+  const navRight = document.createElement("a");
+  navRight.href = galleryPages[nextIndex];
+  navRight.textContent = "→";
+  navRight.className = "gallery-nav-button right";
 
   document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector(".container");
-    container.appendChild(prevLink);
-    container.appendChild(nextLink);
+    const painting = document.querySelector(".painting");
+    if (painting) {
+      painting.insertAdjacentElement("beforebegin", navLeft);
+      painting.insertAdjacentElement("beforebegin", navRight);
+    }
   });
 })();
