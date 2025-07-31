@@ -30,10 +30,19 @@ const galleryPages = [
   const nextIndex = (currentIndex + 1) % galleryPages.length;
 
   document.addEventListener("DOMContentLoaded", () => {
-    const leftBtn = document.querySelector(".gallery-nav-button.left");
-    const rightBtn = document.querySelector(".gallery-nav-button.right");
+    const wrapper = document.querySelector(".painting-wrapper");
+    if (!wrapper) return;
 
-    if (leftBtn) leftBtn.href = galleryPages[prevIndex];
-    if (rightBtn) rightBtn.href = galleryPages[nextIndex];
+    const leftBtn = document.createElement("a");
+    const rightBtn = document.createElement("a");
+
+    leftBtn.href = galleryPages[prevIndex];
+    rightBtn.href = galleryPages[nextIndex];
+
+    leftBtn.className = "gallery-nav-button left";
+    rightBtn.className = "gallery-nav-button right";
+
+    wrapper.appendChild(leftBtn);
+    wrapper.appendChild(rightBtn);
   });
 })();
