@@ -10,7 +10,7 @@
       padding: 2rem;
       font-family: 'Georgia', serif;
       background: url('fon7.jpg') center/cover no-repeat fixed;
-      background-color: #f8f3e8;
+     background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
     }
@@ -21,6 +21,7 @@
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: relative;
     }
     h1 {
       font-size: 2rem;
@@ -31,24 +32,41 @@
       margin-bottom: 0.4rem;
       color: #080129;
     }
-    .image-wrapper {
-      display: inline-block;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      margin: 0 auto 1.5rem;
+    .painting-wrapper {
+      position: relative;
     }
     .painting {
-      display: block;
       width: 100%;
-      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
       border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    .poem {
-      font-style: italic;
-      white-space: pre-line;
-      color: #444;
-      margin: 1rem 0;
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      opacity: 0.4;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    .gallery-nav-button:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
+    .gallery-nav-button.left {
+      left: 1rem;
+      border-width: 20px 28px 20px 0;
+      border-color: transparent #7980ab transparent transparent;
+    }
+    .gallery-nav-button.right {
+      right: 1.5rem;
+      border-width: 20px 0 20px 28px;
+      border-color: transparent transparent transparent #7980ab;
     }
     .artist-signature {
       font-style: italic;
@@ -60,14 +78,14 @@
     .contact-message {
       margin-top: 2rem;
       font-size: 1rem;
-      background-color: #eee3f5;
+      background-color: #d2dbe9;
       padding: 1rem;
-      border-left: 4px solid #5e0397;
+      border-left: 4px solid #99ccff;
     }
     .contact-message a {
-      color: #5d4734;
+      color: #080129;
       text-decoration: underline;
-     }
+    }
     .back-link {
       font-size: 0.95rem;
       margin-bottom: 1.2rem;
@@ -92,6 +110,14 @@
       h1 {
         font-size: 1.5rem;
       }
+      .gallery-nav-button.left {
+        left: 0.6rem;
+        border-width: 16px 24px 16px 0;
+      }
+      .gallery-nav-button.right {
+        right: 0.6rem;
+        border-width: 16px 0 16px 24px;
+      }
     }
   </style>
 </head>
@@ -101,7 +127,7 @@
       <a href="index.html">← Вернуться в галерею</a>
     </div>
 
-    <div class="image-wrapper">
+    <div class="painting-wrapper">
     <img class="painting" src="vrn(50x40).jpg" alt="Оригинальная картина Вадима Золотарёва «Сумерки над водой», масло, холст, 50×40 см">
       </div>
     <h1>«Сумерки над водой»</h1>
@@ -113,7 +139,7 @@
 и сумерки.
 
 Иногда вечер опускается так медленно...
-    </div>
+      </div>
 
     <p class="artist-signature">
       Оригинальная работа<br>
@@ -121,7 +147,7 @@
     </p>
 
     <div class="contact-message">
-      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank" rel="noopener noreferrer">напишите мне в Telegram</a>.<br>
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
       Картина доступна для приобретения.
     </div>
 
@@ -129,5 +155,7 @@
       <a href="index.html">← Вернуться в галерею</a>
     </div>
   </div>
+
+  <script src="gallery.js"></script>
 </body>
 </html>
