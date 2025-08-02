@@ -1,65 +1,193 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Осенью — Vadim Oz</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
+<style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdfbf9;
-      color: #3d3d3d;
-    }
-    .full-image-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       padding: 2rem;
-      text-align: center;
+      font-family: 'Georgia', serif;
+      background: url('fon6.jpg') center/cover no-repeat fixed;
+       background-color: #f8f3e8;
+      color: #2d2d2d;
+      line-height: 1.8;
     }
-    .full-image-container img {
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #080129;
+    }
+
+    .painting-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+
+    .painting {
       max-width: 100%;
       max-height: 80vh;
       height: auto;
+      width: auto;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: block;
     }
-    .description {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 700px;
+
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+      z-index: 5;
     }
-    .description h1 {
-      font-size: 1.8rem;
+
+    .gallery-nav-button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    .gallery-nav-button.left {
+      left: 2%;
+      border-width: 24px 30px 24px 0;
+      border-color: transparent #986a5f transparent transparent;
+    }
+
+    .gallery-nav-button.right {
+      right: 2%;
+      border-width: 24px 0 24px 30px;
+      border-color: transparent transparent transparent #986a5f;
+    }
+
+    .poem {
+      font-style: italic;
+      white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
+    }
+
+    .artist-signature {
+      font-style: italic;
+      color: #666;
+      margin-top: 1rem;
       margin-bottom: 0.5rem;
+      text-align: right;
     }
-    .back-link {
+
+    .contact-message {
       margin-top: 2rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
+      background-color: #82493e;
+      padding: 1rem;
+      border-left: 4px solid #531e12;
     }
+
+    .contact-message a {
+      color: #080129;
+      text-decoration: underline;
+    }
+
+    .back-link {
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .back-link.bottom {
+      margin-top: 2rem;
+    }
+
     .back-link a {
-      color: #5d4734;
+      color: #080129;
       text-decoration: none;
     }
+
     .back-link a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .gallery-nav-button.left {
+        left: 0.5rem;
+        border-width: 16px 22px 16px 0;
+      }
+      .gallery-nav-button.right {
+        right: 0.5rem;
+        border-width: 16px 0 16px 22px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="full-image-container">
-    <img src="fall(105x75).jpg" alt="Осенью">
-    <div class="description">
-      <h1>«Осенью»</h1>
-      <p>Масло, холст, 105×75 см</p>
-    </div>
+  <div class="container">
     <div class="back-link">
       <a href="index.html">← Вернуться в галерею</a>
     </div>
+
+    <div class="painting-wrapper">
+    <img class="painting" src="Galatea(35x25).jpg" alt="Оригинальная работа Вадима Золотарёва «Осенью», масло, холст, 35×25 см">
+    </div>
+      
+      <h1>Осенью</h1>
+      <div class="subtitle">Масло, холст, 35×25 см</div>
+<div class="poem">
+“Югэн” — одно из ключевых понятий классической японской эстетики.
+Дословно это слово (幽玄) переводится как “таинственная глубина” или “невыразимая тонкость”.
+
+Югэн — это красота, которая не лежит на поверхности и не может быть полностью объяснена словами.
+Это ощущение чего-то скрытого, едва уловимого.
+
+Осень — пора увядания, но не мгновенного исчезновения, а медленного стирания.
+Листья опадают, туманы сгущаются, свет становится мягче.
+Красота осени — в её недолговечности, в осознании, что всё это вот-вот исчезнет.
+Именно это чувство хрупкости момента, невидимой грани между «есть» и «уже почти нет» — и есть югэн.
+    </div>
+
+    <p class="artist-signature">
+      Оригинальная работа<br>
+      <em>Вадима Золотарёва</em>
+    </p>
+
+    <div class="contact-message">
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения.
+    </div>
+
+    <div class="back-link bottom">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
   </div>
+
+  <script src="gallery.js"></script>
 </body>
 </html>
