@@ -11,7 +11,7 @@ const galleryPages = [
   "kolokol(50x40).html",
   "EYE.html",
   "Head.html",
-  "RIO.html",
+  "Rio.html",
   "Seoul(80x40).html",
   "konf(24x18).html",
   "Galatea(35x25).html",
