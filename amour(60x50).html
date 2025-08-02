@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Вино и вина — Vadim Oz</title>
+  <title>Любопытство — Vadim Oz</title>
   <style>
     body {
       margin: 0;
       padding: 2rem;
       font-family: 'Georgia', serif;
-      background: url('fon6.jpg') center/cover no-repeat fixed;
+      background: url('parchment-texture78.jpg') center/cover no-repeat fixed;
       background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
@@ -31,51 +31,47 @@
       margin-bottom: 0.4rem;
       color: #080129;
     }
-    .painting-wrapper {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      max-height: 90vh;
-      margin: 0 auto 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
     }
+    .image-inner {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0 1rem;
+  font-size: 1rem;
+}
+
+.nav-buttons a {
+  color: #080129;
+  background-color: #e6eaf3;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.nav-buttons a:hover {
+  background-color: #d2dbe9;
+}
+    
     .painting {
-      max-width: 100%;
-      max-height: 90vh;
-      width: auto;
-      height: auto;
-      border-radius: 8px;
-      object-fit: contain;
-      display: block;
-    }
-    .gallery-nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 3rem;
-      color: rgba(0, 0, 0, 0.3);
-      text-decoration: none;
-      z-index: 10;
-      user-select: none;
-      transition: color 0.2s;
-    }
-    .gallery-nav-button:hover {
-      color: rgba(0, 0, 0, 0.6);
-    }
-    .gallery-nav-button.left::before {
-      content: "◄";
-    }
-    .gallery-nav-button.right::before {
-      content: "►";
-    }
-    .gallery-nav-button.left {
-      left: 1rem;
-    }
-    .gallery-nav-button.right {
-      right: 1rem;
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+   width: auto;
+  border-radius: 8px;
     }
     .poem {
       font-style: italic;
@@ -125,9 +121,6 @@
       h1 {
         font-size: 1.5rem;
       }
-      .gallery-nav-button {
-        font-size: 2.5rem;
-      }
     }
   </style>
 </head>
@@ -137,29 +130,51 @@
       <a href="index.html">← Вернуться в галерею</a>
     </div>
 
-    <div class="painting-wrapper">
-      <a class="gallery-nav-button left" href="empty(105x75).html"></a>
-      <img class="painting" src="amour(60x50).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
-      <a class="gallery-nav-button right" href="vrn(50x40).html"></a>
-    </div>
+    <div class="image-wrapper">
+  <div class="image-inner">
+    <img class="painting" src="amour(60x50).jpg" alt="Оригинальная картина Вадима Золотарёва «Любопытство», масло, холст, 25×20 см">
+  </div>
+</div>
 
-    <h1>Вино и вина</h1>
-    <div class="subtitle">Масло, холст, 90×80 см</div>
+    <div class="nav-buttons">
+  <a href="предыдущая.html">← Предыдущая</a>
+  <a href="следующая.html">Следующая →</a>
+</div>
+
+    <h1>Любопытство</h1>
+    <div class="subtitle">Масло, холст, 25×20 см</div>
+
     <div class="poem">
-      — Здесь может быть стихотворение или описание картины —
+Что за этой дверью?  
+Что на следующей странице?  
+⠀  
+Что-то тянет вперёд —  
+сквозь страх,  
+сквозь запреты,  
+в самую глубину неизвестного.  
+⠀  
+Это не расчёт.  
+И не необходимость.  
+⠀  
+Это изнутри.  
+⠀  
+Неудержимое любопытство —  
+узнать,  
+что будет дальше.
     </div>
 
-    <div class="artist-signature">© Vadim Oz</div>
+    <p class="artist-signature">
+      Оригинальная работа<br>
+      <em>Вадима Золотарёва</em>
+    </p>
 
     <div class="contact-message">
-      Заинтересовала работа? Свяжитесь со мной в <a href="https://t.me/vadimoz">Telegram</a> для обсуждения покупки.
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank" rel="noopener noreferrer">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения.
     </div>
 
     <div class="back-link bottom">
       <a href="index.html">← Вернуться в галерею</a>
     </div>
   </div>
-
-  <script src="gallery.js"></script>
 </body>
-</html>
