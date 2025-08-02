@@ -18,7 +18,8 @@ const galleryPages = [
   "fall(105x75).html",
   "Ikar.html",
   "croc90x60.html",
-  "zakat(100x70).html"
+  "zakat(100x70).html",
+  "vnutri.html"
 ];
 
 (function () {
