@@ -4,11 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Вино и вина — Vadim Oz</title>
-  <link rel="stylesheet" href="gallery.css" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 1.5rem;
+      padding: 0;
       font-family: 'Georgia', serif;
       background: url('fon6.jpg') center/cover no-repeat fixed;
       background-color: #f8f3e8;
@@ -17,7 +20,8 @@
     }
 
     .container {
-      max-width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
       margin: 0 auto;
       padding: 0;
       display: flex;
@@ -25,31 +29,32 @@
     }
 
     .content-box {
-      background-color: rgba(255, 255, 255, 0.92);
-      padding: 1.5rem 2rem 2rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       max-width: 900px;
       width: 100%;
+      padding: 1.5rem 2rem 2rem;
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
-    h1 {
-      font-size: 2rem;
-      margin: 1rem 0 0.3rem;
+    .back-link {
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
     }
 
-    .subtitle {
-      font-size: 1.1rem;
-      margin-bottom: 0.4rem;
+    .back-link a {
       color: #080129;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
     }
 
     .image-wrapper {
       position: relative;
-      display: inline-block;
       width: 100%;
-      max-width: 100%;
-      margin: 0 auto 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     .painting {
@@ -64,38 +69,38 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 2.5rem;
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-      z-index: 10;
+      width: 48px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      clip-path: polygon(100% 50%, 0 0, 0 100%);
       cursor: pointer;
-      transition: opacity 0.3s;
-      width: 40px;
-      height: 40px;
+      z-index: 10;
+      transition: background-color 0.2s ease;
     }
 
     .gallery-nav-button:hover {
-      color: white;
-    }
-
-    .gallery-nav-button.left::before {
-      content: "◀";
-      position: absolute;
-      left: 0;
-    }
-
-    .gallery-nav-button.right::before {
-      content: "▶";
-      position: absolute;
-      right: 0;
-    }
-
-    .gallery-nav-button.left {
-      left: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
     }
 
     .gallery-nav-button.right {
-      right: 10px;
+      right: 12px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .gallery-nav-button.left {
+      left: 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #080129;
     }
 
     .poem {
@@ -126,42 +131,22 @@
       text-decoration: underline;
     }
 
-    .back-link {
-      font-size: 0.95rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .back-link.bottom {
-      margin-top: 2rem;
-    }
-
-    .back-link a {
-      color: #080129;
-      text-decoration: none;
-    }
-
-    .back-link a:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 600px) {
+      .content-box {
+        padding: 1.2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
       .gallery-nav-button {
-        font-size: 2rem;
-        width: 30px;
-        height: 30px;
-      }
-
-      .gallery-nav-button.left {
-        left: 5px;
-      }
-
-      .gallery-nav-button.right {
-        right: 5px;
+        width: 36px;
+        height: 36px;
       }
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <div class="content-box">
@@ -170,23 +155,17 @@
       </div>
 
       <div class="image-wrapper">
-        <a class="gallery-nav-button left"></a>
-        <img class="painting" src="kolokol(50x40).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
-        <a class="gallery-nav-button right"></a>
+        <img class="painting" src="wine(90x80).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
+        <a class="gallery-nav-button left" href="empty(105x75).html"></a>
+        <a class="gallery-nav-button right" href="vrn(50x40).html"></a>
       </div>
 
       <h1>Вино и вина</h1>
       <div class="subtitle">Масло, холст, 90×80 см</div>
       <div class="poem">
-        (твой текст)
-      </div>
-
-      <div class="contact-message">
-        Хотите увидеть картину вживую или приобрести её? Напишите мне в <a href="https://t.me/ваш_ник">Telegram</a>.
+        Здесь может быть стихотворение или описание к картине.
       </div>
     </div>
   </div>
-
-  <script src="gallery.js"></script>
 </body>
 </html>
