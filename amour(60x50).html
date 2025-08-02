@@ -31,59 +31,58 @@
       margin-bottom: 0.4rem;
       color: #080129;
     }
-
     .painting-wrapper {
       position: relative;
-      width: 100%;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
+      max-height: 90vh;
+      margin: 0 auto 1.5rem;
+      border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-
     .painting {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
+      max-width: 100%;
       max-height: 90vh;
+      width: auto;
+      height: auto;
+      border-radius: 8px;
       object-fit: contain;
+      display: block;
     }
-
     .gallery-nav-button {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
+      font-size: 3rem;
+      color: rgba(0, 0, 0, 0.3);
+      text-decoration: none;
       z-index: 10;
+      user-select: none;
+      transition: color 0.2s;
     }
-
     .gallery-nav-button:hover {
-      opacity: 0.8;
+      color: rgba(0, 0, 0, 0.6);
     }
-
+    .gallery-nav-button.left::before {
+      content: "◄";
+    }
+    .gallery-nav-button.right::before {
+      content: "►";
+    }
     .gallery-nav-button.left {
-      left: 12px;
-      border-right: 30px solid rgba(0, 0, 0, 0.6);
+      left: 1rem;
     }
-
     .gallery-nav-button.right {
-      right: 12px;
-      border-left: 30px solid rgba(0, 0, 0, 0.6);
+      right: 1rem;
     }
-
     .poem {
       font-style: italic;
       white-space: pre-line;
       color: #444;
       margin: 1rem 0;
     }
-
     .artist-signature {
       font-style: italic;
       color: #666;
@@ -91,7 +90,6 @@
       margin-bottom: 0.5rem;
       text-align: right;
     }
-
     .contact-message {
       margin-top: 2rem;
       font-size: 1rem;
@@ -99,30 +97,24 @@
       padding: 1rem;
       border-left: 4px solid #99ccff;
     }
-
     .contact-message a {
       color: #080129;
       text-decoration: underline;
     }
-
     .back-link {
       font-size: 0.95rem;
       margin-bottom: 1.2rem;
     }
-
     .back-link.bottom {
       margin-top: 2rem;
     }
-
     .back-link a {
       color: #080129;
       text-decoration: none;
     }
-
     .back-link a:hover {
       text-decoration: underline;
     }
-
     @media (max-width: 600px) {
       body {
         padding: 1rem;
@@ -133,19 +125,8 @@
       h1 {
         font-size: 1.5rem;
       }
-
-      .gallery-nav-button.left {
-        left: 6px;
-        border-right: 20px solid rgba(0, 0, 0, 0.6);
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-      }
-
-      .gallery-nav-button.right {
-        right: 6px;
-        border-left: 20px solid rgba(0, 0, 0, 0.6);
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
+      .gallery-nav-button {
+        font-size: 2.5rem;
       }
     }
   </style>
@@ -157,18 +138,21 @@
     </div>
 
     <div class="painting-wrapper">
-      <img class="painting" src="amour(60x50).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
-      <!-- Стрелки появятся автоматически через gallery.js -->
+      <a class="gallery-nav-button left" href="empty(105x75).html"></a>
+      <img class="painting" src="amour(60x50).html" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
+      <a class="gallery-nav-button right" href="vrn(50x40).html"></a>
     </div>
 
     <h1>Вино и вина</h1>
     <div class="subtitle">Масло, холст, 90×80 см</div>
     <div class="poem">
-      Здесь может быть поэтический текст о картине.
+      — Здесь может быть стихотворение или описание картины —
     </div>
 
+    <div class="artist-signature">© Vadim Oz</div>
+
     <div class="contact-message">
-      Если вы хотите приобрести эту работу или задать вопрос автору — напишите в <a href="https://t.me/vadim_zolotarov" target="_blank">Telegram</a>.
+      Заинтересовала работа? Свяжитесь со мной в <a href="https://t.me/vadimoz">Telegram</a> для обсуждения покупки.
     </div>
 
     <div class="back-link bottom">
