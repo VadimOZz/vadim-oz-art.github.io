@@ -5,32 +5,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Вино и вина — Vadim Oz</title>
   <link rel="stylesheet" href="gallery.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      font-family: 'Georgia', serif;
+      background: url('fon6.jpg') center/cover no-repeat fixed;
+      background-color: #f8f3e8;
+      color: #2d2d2d;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 1.5rem 2rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #080129;
+    }
+
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto 1.5rem;
+    }
+
+    .painting {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      z-index: 10;
+      cursor: pointer;
+      transition: opacity 0.3s;
+      width: 40px;
+      height: 40px;
+    }
+
+    .gallery-nav-button:hover {
+      color: white;
+    }
+
+    .gallery-nav-button.left::before {
+      content: "◀";
+      position: absolute;
+      left: 0;
+    }
+
+    .gallery-nav-button.right::before {
+      content: "▶";
+      position: absolute;
+      right: 0;
+    }
+
+    .gallery-nav-button.left {
+      left: 10px;
+    }
+
+    .gallery-nav-button.right {
+      right: 10px;
+    }
+
+    .poem {
+      font-style: italic;
+      white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
+    }
+
+    .artist-signature {
+      font-style: italic;
+      color: #666;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      text-align: right;
+    }
+
+    .contact-message {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #d2dbe9;
+      padding: 1rem;
+      border-left: 4px solid #99ccff;
+    }
+
+    .contact-message a {
+      color: #080129;
+      text-decoration: underline;
+    }
+
+    .back-link {
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .back-link.bottom {
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #080129;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-nav-button {
+        font-size: 2rem;
+        width: 30px;
+        height: 30px;
+      }
+
+      .gallery-nav-button.left {
+        left: 5px;
+      }
+
+      .gallery-nav-button.right {
+        right: 5px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="back-link">
-      <a href="index.html">← Вернуться в галерею</a>
-    </div>
+    <div class="content-box">
+      <div class="back-link">
+        <a href="index.html">← Вернуться в галерею</a>
+      </div>
 
-    <div class="painting-wrapper">
-      <img class="painting" src="wine(90x80).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
-      <a class="gallery-nav-button left" href="#">◀</a>
-      <a class="gallery-nav-button right" href="#">▶</a>
-    </div>
+      <div class="image-wrapper">
+        <a class="gallery-nav-button left"></a>
+        <img class="painting" src="kolokol(50x40).jpg" alt="Оригинальная картина Вадима Золотарёва «Вино и вина», масло на холсте, 90×80 см">
+        <a class="gallery-nav-button right"></a>
+      </div>
 
-    <h1>Вино и вина</h1>
-    <div class="subtitle">Масло, холст, 90×80 см</div>
-    <div class="poem">
-      <!-- Здесь можно добавить текст -->
-    </div>
+      <h1>Вино и вина</h1>
+      <div class="subtitle">Масло, холст, 90×80 см</div>
+      <div class="poem">
+        (твой текст)
+      </div>
 
-    <div class="artist-signature">© Vadim Oz</div>
-    <div class="contact-message">
-      По вопросам приобретения этой работы напишите <a href="https://t.me/yourtelegram">@yourtelegram</a>
-    </div>
-
-    <div class="back-link bottom">
-      <a href="index.html">← Вернуться в галерею</a>
+      <div class="contact-message">
+        Хотите увидеть картину вживую или приобрести её? Напишите мне в <a href="https://t.me/ваш_ник">Telegram</a>.
+      </div>
     </div>
   </div>
 
