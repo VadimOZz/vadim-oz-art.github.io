@@ -10,7 +10,7 @@
       padding: 2rem;
       font-family: 'Georgia', serif;
       background: url('fon6.jpg') center/cover no-repeat fixed;
-      background-color: #f8f3e8;
+     background-color: #f8f3e8;
       color: #2d2d2d;
       line-height: 1.8;
     }
@@ -32,22 +32,24 @@
       margin-bottom: 0.4rem;
       color: #080129;
     }
+
     .painting-wrapper {
       position: relative;
-    }
-    .painting {
-      width: 100%;
-      max-height: 80vh;
-      object-fit: contain;
-      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 1rem;
+      max-width: 100%;
+    }
+
+    .painting {
+      max-width: 100%;
+      max-height: 80vh;
+      height: auto;
+      width: auto;
+      border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-    .poem {
-      font-style: italic;
-      white-space: pre-line;
-      color: #444;
-      margin: 1rem 0;
+      display: block;
     }
     .gallery-nav-button {
       position: absolute;
@@ -65,14 +67,20 @@
       cursor: pointer;
     }
     .gallery-nav-button.left {
-      left: 1rem;
-      border-width: 20px 28px 20px 0;
+      left: 5%;
+      border-width: 24px 30px 24px 0;
       border-color: transparent #ebad64 transparent transparent;
     }
     .gallery-nav-button.right {
-      right: 1.5rem;
-      border-width: 20px 0 20px 28px;
+      right: 5%;
+      border-width: 24px 0 24px 30px;
       border-color: transparent transparent transparent #ebad64;
+    }
+    .poem {
+      font-style: italic;
+      white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
     }
     .artist-signature {
       font-style: italic;
@@ -96,16 +104,20 @@
       font-size: 0.95rem;
       margin-bottom: 1.2rem;
     }
+
     .back-link.bottom {
       margin-top: 2rem;
     }
+
     .back-link a {
       color: #080129;
       text-decoration: none;
     }
+
     .back-link a:hover {
       text-decoration: underline;
     }
+
     @media (max-width: 600px) {
       body {
         padding: 1rem;
@@ -117,12 +129,12 @@
         font-size: 1.5rem;
       }
       .gallery-nav-button.left {
-        left: 0.6rem;
-        border-width: 16px 24px 16px 0;
+        left: 0.5rem;
+        border-width: 16px 22px 16px 0;
       }
       .gallery-nav-button.right {
-        right: 0.6rem;
-        border-width: 16px 0 16px 24px;
+        right: 0.5rem;
+        border-width: 16px 0 16px 22px;
       }
     }
   </style>
@@ -144,7 +156,7 @@
 Закат — впереди. Новый день — где-то там.
 Любопытство сильнее страха. 
 Предвкушение.
-   </div>
+    </div>
 
     <p class="artist-signature">
       Оригинальная работа<br>
