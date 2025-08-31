@@ -10,6 +10,7 @@ const galleryPages = [
   "dream(40x35).html",
   "kolokol(50x40).html",
   "akula.html",
+  "touch.html",
   "EYE.html",
   "Head.html",
   "Rio.html",
