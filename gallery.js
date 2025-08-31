@@ -3,6 +3,7 @@ const galleryPages = [
   "sp(100x70).html",
   "empty(105x75).html",
   "wine(90x80).html",
+  "boat.html",
   "memorie.html",
   "vrn(50x40).html",
   "tree(24x18).html",
