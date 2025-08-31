@@ -19,6 +19,7 @@ const galleryPages = [
   "Seoul(80x40).html",
   "konf(24x18).html",
   "angel.html",
+  "elly.html",
   "Galatea(35x25).html",
   "fall(105x75).html",
   "Ikar.html",
