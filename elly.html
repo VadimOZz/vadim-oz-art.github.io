@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Элли — Vadim Oz</title>
+<style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Georgia', serif;
+      background: url('redorange.jpg') center/cover no-repeat fixed;
+       background-color: #f8f3e8;
+      color: #2d2d2d;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.3rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #080129;
+    }
+
+    .painting-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+
+    .painting {
+      max-width: 100%;
+      max-height: 80vh;
+      height: auto;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+
+    .gallery-nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+      z-index: 5;
+    }
+
+    .gallery-nav-button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    .gallery-nav-button.left {
+      left: 2%;
+      border-width: 24px 30px 24px 0;
+      border-color: transparent #df865a transparent transparent;
+    }
+
+    .gallery-nav-button.right {
+      right: 2%;
+      border-width: 24px 0 24px 30px;
+      border-color: transparent transparent transparent #df865a;
+    }
+
+    .poem {
+      font-style: italic;
+      white-space: pre-line;
+      color: #444;
+      margin: 1rem 0;
+    }
+
+    .artist-signature {
+      font-style: italic;
+      color: #666;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      text-align: right;
+    }
+
+    .contact-message {
+      margin-top: 2rem;
+      font-size: 1rem;
+      background-color: #f7c69a;
+      padding: 1rem;
+      border-left: 4px solid #c65e02;
+    }
+
+    .contact-message a {
+      color: #080129;
+      text-decoration: underline;
+    }
+
+    .back-link {
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .back-link.bottom {
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #080129;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .gallery-nav-button.left {
+        left: 0.5rem;
+        border-width: 16px 22px 16px 0;
+      }
+      .gallery-nav-button.right {
+        right: 0.5rem;
+        border-width: 16px 0 16px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-link">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+
+    <div class="painting-wrapper">
+    <img class="painting" src="Elly1000.jpg" alt="Оригинальная работа Вадима Золотарёва «Элли», масло, холст, 70×40 см">
+    </div>
+      
+      <h1>Элли</h1>
+      <div class="subtitle">Масло, холст, 70×40 см</div>
+<div class="poem">
+    </div>
+
+    <p class="artist-signature">
+      Оригинальная работа<br>
+      <em>Вадима Золотарёва</em>
+    </p>
+
+    <div class="contact-message">
+      Если вам откликнулась эта работа — <a href="https://t.me/vadim_ozz" target="_blank">напишите мне в Telegram</a>.<br>
+      Картина доступна для приобретения.
+    </div>
+
+    <div class="back-link bottom">
+      <a href="index.html">← Вернуться в галерею</a>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
